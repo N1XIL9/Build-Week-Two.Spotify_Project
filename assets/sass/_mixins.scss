@@ -1,1 +1,29 @@
+@mixin textStyle {
+    color: $textColor;
+    font-style: normal;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    display: inline;
+}
 
+@mixin bgColorGradient {
+    background: rgb(65,64,63);
+    background: linear-gradient(180deg, rgba(65,64,63,1) 0%, rgba(28,27,27,1) 46%);
+}
+
+@mixin iconStyle {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: $titleColor;
+}
+
+@mixin mainIconStyle {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: black;
+    
+}
+
+@mixin friends {
+    
+}
