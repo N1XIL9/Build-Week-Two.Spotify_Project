@@ -13,14 +13,14 @@
 <body>
 
     <div class="container-fluid">
-        <!-- SECTION LEFT  -->
+        <!-- START SECTION LEFT  -->
        <div class="row">
             <div id="leftSide" class="col-2 border border-dark">
                 <!-- ICONE - TABS - COMMENTI  -->
-                <div class="iconTabsComm d-flex flex-column">
+                <div id="simple-list-example" class="iconTabsComm d-flex flex-column simple-list-example-scrollspy">
                     <i class="bi bi-three-dots"></i>
-                    <i class="bi bi-house-door-fill"><h6>Home</h6></i> 
-                    <i class="bi bi-search"><input type="text" id="searchBar" placeholder="Cerca"></i>
+                    <a href="#index.html"> <i class="bi bi-house-door-fill"><h6>Home</h6></i> </a> 
+                    <i class="bi bi-search"><h6>Cerca</h6></i>
                     <i class="bi bi-files"><h6>La tua libreria</h6></i>
                 </div>
             
@@ -31,52 +31,88 @@
                 </div>
                 <hr>
 
-            <!-- COMMENTI  -->
-            <div class="iconTabsComm d-flex flex-column ">
-                <p>early stage emily syndrome (sett-ott 2022)</p>
-                <p>Lidia risparmiaci🙏</p>
-                <p>Eric uno di noi 🙌</p>
-                <p>Per me è la cipolla 🧅</p>
-                <p>main character energy (mag-giu 2022)</p>
-                <p>ammazzo tutti🔪⚙️</p>
-                <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
-                <p>An Fmilv Winchester kind of mond🔪</p>
-                <p>Non ce la posso fare 😞</p>
-                <p>Ce la posso fare 😃</p>
-                <p>Bipolar man 🥸</p>
-                <p>An Fmilv Winchester kind of mond🔪</p>
-                <p>main character energy (mag-giu 2022)</p>
-                <p>Frah Quintale Mix</p>
-                <p>Francescp Guccini Mix</p>
-                <p>Fabrizio De Andrè</p>
-                <p>Non so cosa scrivere</p>
-                <p>Boh vediamo cosi </p>
-                <p>Sà Sà Prova prova 🎙</p>
-                <p>asdasadsdasdasd</p>
-                <p>MA come si fa sto scrolling</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <!-- COMMENTI  -->
+                <div id="comment-scroll" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 600px; position:relative; background-color: black;">
                 
+                    <p>early stage emily syndrome (sett-ott 2022)</p>
+                    <p>Lidia risparmiaci🙏</p>
+                    <p>Eric uno di noi 🙌</p>
+                    <p>Per me è la cipolla 🧅</p>
+                    <p>main character energy (mag-giu 2022)</p>
+                    <p>ammazzo tutti🔪⚙️</p>
+                    <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
+                    <p>An Fmilv Winchester kind of mond🔪</p>
+                    <p>Non ce la posso fare 😞</p>
+                    <p>Ce la posso fare 😃</p>
+                    <p>Bipolar man 🥸</p>
+                    <p>An Fmilv Winchester kind of mond🔪</p>
+                    <p>main character energy (mag-giu 2022)</p>
+                    <p>Frah Quintale Mix</p>
+                    <p>Francescp Guccini Mix</p>
+                    <p>Fabrizio De Andrè</p>
+                    <p>Non so cosa scrivere</p>
+                    <p>Boh vediamo cosi </p>
+                    <p>Sà Sà Prova prova 🎙</p>
+                    <p>asdasadsdasdasd</p>
+                    <p>MA come si fa sto scrolling</p>
+                    <p>early stage emily syndrome (sett-ott 2022)</p>
+                    <p>Lidia risparmiaci🙏</p>
+                    <p>Eric uno di noi 🙌</p>
+                    <p>Per me è la cipolla 🧅</p>
+                    <p>main character energy (mag-giu 2022)</p>
+                    <p>ammazzo tutti🔪⚙️</p>
+                    <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
+                    <p>An Fmilv Winchester kind of mond🔪</p>
+                    
+                </div>
             </div>
+            <!-- END SECTION LEFT  -->
             
-        </div>
-
-        <!-- SECTION CENTER  -->
+            <!-- SECTION CENTER  -->
         
-        <div id="main-section" class="col ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="bi bi-arrow-left-circle-fill"></i>
-                        <i class="bi bi-arrow-right-circle-fill"></i>
+            <div id="main-section" class="col ">
+                <div class="container" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 600px; position:relative;">
+
+                    <!-- INIZIO BARRA MAIN -->
+                    <div id="main-bar" class="row d-flex justify-content-between">
+                        <!-- ICONE FRECCE -->
+                        <div class="col-2">
+                            <i class="bi bi-arrow-left-circle-fill"></i>
+                            <i class="bi bi-arrow-right-circle-fill"></i>
+                        </div>
+                        <!-- FINE ICONE FRECCE -->
+
+                        <!-- BOTTONE DROPDOWN -->
+                        <div class="col-2">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD" alt="">
+                                    
+                                    Giuseppe
+                                    
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Account</a></li>
+                                    <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                    <li><a class="dropdown-item" href="#">Esci</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- FINE BOTTONE DROPDOWN -->
+                    </div>
+                    <!-- FINE BARRA MAIN -->
+                    
+                    <!-- INIZIO JUMBOTRON -->
+                    <div id="jumbotron" class="row" >
+                      <div class="col-4 p-3">
+                            <img src="https://rockitecn.nohup.it/thumb500x500/copertine/55716/picaresque.webp" alt="">
+                      </div>
+                      <div class="col-8"></div>
                     </div>
                 </div>
             </div>
-        </div>
+
+       
         
         
 
@@ -111,6 +147,7 @@
             </div>
         
             <div class="row friends">
+                
                 <div class="col-3">
                     <div class="friend friend-1"></div>
                 </div>
@@ -125,6 +162,7 @@
             </div>
 
             <div class="row friends ">
+
                 <div class="col-3">
                     <div class="friend friend-3"></div>
                 </div>
@@ -139,27 +177,46 @@
             </div>
         </div>
 
-
-           
-        
-
-
-
-       
-
-        <!-- SECTION PLAYER  -->
-       
-   
-           
-            
-           
-   
-   
-       
-       
     </div>
     
+    <!-- START SECTION PLAYER  -->
     
+     <section id="navbar-bottom">
+        <div id="navbar-left">
+          <img src="https://picsum.photos/60/60" alt="music" />
+          <div class="play-back">
+            <p id="title-song">La Passeggiata</p>
+            <p id="author">Nicola Lerra</p>
+          </div>
+          <i class="bi bi-heart"></i>
+        </div>
+        <div id="navbar-center">
+          <div class="track-buttons">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-circle-pause" id="pause"></i>
+            <i class="fa-solid fa-circle-play" id="play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="bi bi-repeat"></i>
+          </div>
+          <div class="trackbar">
+            <p id="current-seconds">0.0</p>
+            <div id="track-seconds"></div>
+            <div class="track-default"></div>
+            <p id="total-seconds">2.56</p>
+          </div>
+        </div>
+        <div id="navbar-right">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-computer"></i>
+          <i class="fa-solid fa-volume-off"></i>
+          <div class="volume">
+            <div id="volume-set" class="volume-set"></div>
+            <div class="volume-default"></div>
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION PLAYER>
 
  
 
