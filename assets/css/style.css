@@ -10776,6 +10776,16 @@ body {
   height: 100%;
 }
 
+h1, .h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
+
+h2, .h2, h3, .h3, h5, .h5 {
+  color: white;
+}
+
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
   height: 100%;
@@ -10829,7 +10839,7 @@ hr {
 
 #main-section {
   background: rgb(65, 64, 63);
-  background: linear-gradient(180deg, rgb(65, 64, 63) 0%, rgb(28, 27, 27) 46%);
+  background: linear-gradient(180deg, rgb(46, 45, 44) 0%, rgb(16, 15, 15) 46%);
 }
 #main-section .bi {
   cursor: pointer;
@@ -10865,7 +10875,31 @@ hr {
   margin-top: 2vh;
 }
 #jumbotron img {
-  width: 80%;
+  width: 100%;
+}
+#jumbotron h5, #jumbotron .h5 {
+  margin-top: 2vh;
+}
+#jumbotron p {
+  margin-top: 2vh;
+  color: white;
+}
+#jumbotron button {
+  border-radius: 2em;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 12vh;
+  height: 6vh;
+  margin-right: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+#jumbotron #btn-play {
+  background-color: #1ED760;
+  color: black;
+  border: none;
 }
 
 .friend {

@@ -8,7 +8,7 @@
 
 @mixin bgColorGradient {
     background: rgb(65,64,63);
-    background: linear-gradient(180deg, rgba(65,64,63,1) 0%, rgba(28,27,27,1) 46%);
+    background: linear-gradient(180deg, rgb(46 45 44) 0%, rgb(16 15 15) 46%);;
 }
 
 @mixin iconStyle {
@@ -42,3 +42,6 @@
     }
 
 }
+
+// SECTION BOTTOM PLAYER 
+
