@@ -10781,3 +10781,18 @@ body {
   height: 100%;
   border: 3px solid black;
 }
+
+.iconTabsComm .bi {
+  font-size: 1.3rem;
+}
+.iconTabsComm h6, .iconTabsComm .h6 {
+  font-size: 0.9rem;
+  display: inline;
+  margin-left: 10px;
+}
+.iconTabsComm input {
+  margin-left: 10px;
+  background-color: black;
+  border: none;
+  font-size: 0.9rem;
+}

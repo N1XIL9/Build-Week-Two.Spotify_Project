@@ -9,3 +9,25 @@ body{
     border: 3px solid black;
 }
 
+
+
+// ICONE - TABS - COMMENTI 
+
+.iconTabsComm{
+    
+    .bi {
+        font-size: 1.3rem;
+    };
+
+    h6 {
+        font-size: 0.9rem;
+        display: inline;
+        margin-left: 10px;
+    };
+    input {
+        margin-left: 10px;
+        background-color: black;
+        border: none;
+        font-size: 0.9rem;
+    }
+}
