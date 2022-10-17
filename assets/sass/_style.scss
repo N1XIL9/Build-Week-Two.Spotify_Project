@@ -13,9 +13,15 @@ body{
 
 // ICONE - TABS - COMMENTI 
 
+#leftSide {
+    background-color: $sideColor;
+    color: $textColor;
+}
+
 .iconTabsComm{
     
     .bi {
+        cursor: pointer;
         font-size: 1.3rem;
     };
 
@@ -24,10 +30,21 @@ body{
         display: inline;
         margin-left: 10px;
     };
+    
+    h6:hover{
+        color: white;
+    }
+
     input {
+        cursor: pointer;
         margin-left: 10px;
         background-color: black;
         border: none;
         font-size: 0.9rem;
-    }
+        color: $textColor;
+    };
+
+    ::placeholder{
+        color: $textColor;
+    };
 }

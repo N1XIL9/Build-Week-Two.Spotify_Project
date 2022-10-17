@@ -10782,7 +10782,13 @@ body {
   border: 3px solid black;
 }
 
+#leftSide {
+  background-color: black;
+  color: #B2AFAC;
+}
+
 .iconTabsComm .bi {
+  cursor: pointer;
   font-size: 1.3rem;
 }
 .iconTabsComm h6, .iconTabsComm .h6 {
@@ -10790,9 +10796,17 @@ body {
   display: inline;
   margin-left: 10px;
 }
+.iconTabsComm h6:hover, .iconTabsComm .h6:hover {
+  color: white;
+}
 .iconTabsComm input {
+  cursor: pointer;
   margin-left: 10px;
   background-color: black;
   border: none;
   font-size: 0.9rem;
+  color: #B2AFAC;
+}
+.iconTabsComm ::placeholder {
+  color: #B2AFAC;
 }
