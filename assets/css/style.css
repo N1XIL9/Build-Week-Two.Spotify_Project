@@ -10805,14 +10805,14 @@ h5,
 #leftSide,
 #rightside {
   background-color: black;
-  color: #B2AFAC;
+  color: #b2afac;
 }
 
 .iconTabsComm {
   margin-bottom: 20px;
 }
 .iconTabsComm h6, .iconTabsComm .h6 {
-  color: #B2AFAC;
+  color: #b2afac;
   font-style: normal;
   font-size: 0.8rem;
   margin-left: 10px;
@@ -10827,7 +10827,7 @@ h5,
   background-color: black;
   border: none;
   font-size: 0.9rem;
-  color: #B2AFAC;
+  color: #b2afac;
 }
 .iconTabsComm i {
   margin-left: 5px;
@@ -10843,7 +10843,7 @@ p {
 }
 
 hr {
-  columns: #B2AFAC;
+  columns: #b2afac;
 }
 
 #main-section {
@@ -10863,6 +10863,10 @@ hr {
 #main-bar {
   position: sticky;
   top: 0;
+  z-index: 99;
+}
+#main-bar i {
+  z-index: 99;
 }
 
 .dropdown button {
@@ -10876,12 +10880,13 @@ hr {
   margin-right: 1vh;
 }
 .dropdown ul {
-  background-color: #B2AFAC;
+  background-color: #b2afac;
 }
 
 #jumbotron {
   background-color: black;
   margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 #jumbotron img {
   width: 100%;
@@ -10892,6 +10897,7 @@ hr {
 #jumbotron p {
   margin-top: 2vh;
   color: white;
+  font-weight: 400;
 }
 #jumbotron button {
   border-radius: 2em;
@@ -10905,11 +10911,25 @@ hr {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
-
-#btn-play {
+#jumbotron #btn-play {
   background-color: #1ed760;
   color: black;
   border: none;
+}
+
+#playlist .playlist-box {
+  background-color: #2e2d2d;
+  width: 30%;
+  padding: 0;
+  margin-top: 2vh;
+  margin-right: 2vh;
+}
+#playlist img {
+  width: 8vh;
+}
+#playlist p {
+  margin-left: 1vh;
+  color: white;
 }
 
 .friend {
