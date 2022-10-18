@@ -84,6 +84,10 @@ hr {
 #main-bar {
   position: sticky;
   top: 0;
+  z-index: 99;
+  i {
+    z-index: 99;
+  }
 }
 
 .dropdown {
@@ -92,7 +96,10 @@ hr {
 
 #jumbotron {
   background-color: $sideColor;
-  margin-top: 2vh;
+  margin: {
+    top: 2vh;
+    bottom: 2vh;
+  }
   img {
     width: 100%;
   }
@@ -102,16 +109,36 @@ hr {
   p {
     margin-top: 2vh;
     color: $titleColor;
+    font-weight: 400;
   }
 
   button {
     @include genericButton;
   }
+  #btn-play {
+    background-color: #1ed760;
+    color: black;
+    border: none;
+  }
 }
-#btn-play {
-  background-color: #1ed760;
-  color: black;
-  border: none;
+
+#playlist {
+  .playlist-box {
+    background-color: $bgColorBox;
+    width: 30%;
+    padding: 0;
+    margin: {
+      top: 2vh;
+      right: 2vh;
+    }
+  }
+  img {
+    width: 8vh;
+  }
+  p {
+    margin-left: 1vh;
+    color: white;
+  }
 }
 
 // SECTION RIGHT
