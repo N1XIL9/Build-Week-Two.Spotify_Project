@@ -10782,7 +10782,11 @@ h1, .h1 {
   font-weight: bold;
 }
 
-h2, .h2, h3, .h3, h5, .h5 {
+h2, .h2,
+h3,
+.h3,
+h5,
+.h5 {
   color: white;
 }
 
@@ -10798,7 +10802,8 @@ h2, .h2, h3, .h3, h5, .h5 {
   color: white;
 }
 
-#leftSide, #rightside {
+#leftSide,
+#rightside {
   background-color: black;
   color: #B2AFAC;
 }
@@ -10896,8 +10901,9 @@ hr {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
-#jumbotron #btn-play {
-  background-color: #1ED760;
+
+#btn-play {
+  background-color: #1ed760;
   color: black;
   border: none;
 }
@@ -11024,7 +11030,7 @@ svg {
 }
 
 #navbar-bottom #navbar-center .trackbar:hover #track-seconds {
-  background-color: #1ED760;
+  background-color: #1ed760;
 }
 
 #navbar-bottom #navbar-right {
@@ -11061,5 +11067,5 @@ svg {
 }
 
 #navbar-bottom #navbar-right .volume:hover #volume-set {
-  background-color: #1ED760;
+  background-color: #1ed760;
 }
