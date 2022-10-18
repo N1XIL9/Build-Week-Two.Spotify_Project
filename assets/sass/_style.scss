@@ -264,10 +264,7 @@ svg {
 
   // SECTION ARTIST 
   
-  .container {
+  #container-artist {
     height: 30vh;
-
-    .hsei {
-      color:white;
-    };
+    display: flex;
   }
