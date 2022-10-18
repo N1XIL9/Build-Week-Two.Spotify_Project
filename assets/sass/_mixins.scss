@@ -53,4 +53,12 @@
     bottom: 2vh;
   }
 }
-// SECTION BOTTOM PLAYER
+
+@mixin textDecoration {
+    a {
+        text-decoration: none;
+    }
+}
+
+// SECTION BOTTOM PLAYER 
+

@@ -60,6 +60,10 @@ h5 {
   }
 }
 
+a {
+  @include textDecoration;
+}
+
 p {
   font-size: 0.7rem;
 }
@@ -257,3 +261,13 @@ svg {
 #navbar-bottom #navbar-right .volume:hover #volume-set {
   background-color: #1ed760;
 }
+
+  // SECTION ARTIST 
+  
+  .container {
+    height: 30vh;
+
+    .hsei {
+      color:white;
+    };
+  }
