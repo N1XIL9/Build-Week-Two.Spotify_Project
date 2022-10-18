@@ -10782,7 +10782,11 @@ h1, .h1 {
   font-weight: bold;
 }
 
-h2, .h2, h3, .h3, h5, .h5 {
+h2, .h2,
+h3,
+.h3,
+h5,
+.h5 {
   color: white;
 }
 
@@ -10798,7 +10802,8 @@ h2, .h2, h3, .h3, h5, .h5 {
   color: white;
 }
 
-#leftSide, #rightside {
+#leftSide,
+#rightside {
   background-color: black;
   color: #B2AFAC;
 }
@@ -10897,9 +10902,32 @@ hr {
   margin-bottom: 2vh;
 }
 #jumbotron #btn-play {
-  background-color: #1ED760;
+  background-color: #1ed760;
   color: black;
   border: none;
+}
+
+.album-cover-box {
+  width: 100%;
+  height: 35vh;
+  background-color: antiquewhite;
+}
+
+#album-cover {
+  display: flex;
+  flex-direction: row;
+}
+#album-cover #cover-img {
+  box-shadow: black;
+  width: 180px;
+  height: 180px;
+  background-image: url(https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/114/posts/34296/final_image/Final-image.jpg);
+  background-size: cover;
+}
+
+#album-titles {
+  background: rgb(250, 235, 215);
+  background: linear-gradient(0deg, rgba(250, 235, 215, 0) 4%, rgba(250, 235, 215, 0.5) 100%);
 }
 
 .friend {
@@ -10914,11 +10942,11 @@ hr {
 }
 
 .friend-2 {
-  background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQGzFA-mDWEUug/profile-displayphoto-shrink_800_800/0/1633620833534?e=1671667200&v=beta&t=4CD6cAkYPLnQXUmehd88U4xTW8hIpiF_ShX1Xqx66DY);
+  background-image: url(https://d12uefesvffx6j.cloudfront.net/19c5f765-0557-4426-9640-815710205fb3-6-luglio-battiferro-ok.jpg/658e92357ddaf83a37526e47323880e7e339b4c0.jpg);
 }
 
 .friend-3 {
-  background-image: url(https://s2.r29static.com/bin/entry/c3f/x,80/2208446/image.jpg);
+  background-image: url(https://www.tonica.la/__export/1599499388876/sites/debate/img/2020/09/07/dolores_oxriordan-the_cranberries-49_aniversario.jpg_423682103.jpg);
 }
 
 svg {
@@ -11024,7 +11052,7 @@ svg {
 }
 
 #navbar-bottom #navbar-center .trackbar:hover #track-seconds {
-  background-color: #1ED760;
+  background-color: #1ed760;
 }
 
 #navbar-bottom #navbar-right {
@@ -11061,5 +11089,5 @@ svg {
 }
 
 #navbar-bottom #navbar-right .volume:hover #volume-set {
-  background-color: #1ED760;
+  background-color: #1ed760;
 }
