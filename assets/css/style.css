@@ -10866,17 +10866,24 @@ hr {
   top: 0;
   z-index: 99;
 }
+#main-bar p {
+  font-size: 0.7rem;
+}
 #main-bar i {
   z-index: 99;
 }
 
+.dropdown {
+  font-size: 0.7rem;
+}
 .dropdown button {
+  width: 80%;
   border: none;
   border-radius: 3em;
   background-color: black;
 }
 .dropdown button img {
-  width: 23%;
+  width: 22%;
   border-radius: 50%;
   margin-right: 1vh;
 }
