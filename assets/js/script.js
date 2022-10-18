@@ -5,26 +5,24 @@
 // }
 
 async function loadJSON() {
-  let musicResponse = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
+  let musicResponse = await fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`
+  );
   let musicObject = await musicResponse.json();
   let musicArray = musicObject.data;
-  console.log(musicArray)
+  console.log(musicArray);
 
-  for (music of musicArray) {
-    let container = document.querySelector('card-container')
-    container.innerHTML += `<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  for (i = 0; i < musicArray.length; i++) {
+    let container = document.querySelector("#card-container");
+    container.innerHTML += `<div class="card-3 m-3" style="width: 10rem; height: 20%">
+  <img src="${musicArray[i].album.cover_small}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">${musicArray[i].album.title}</h5>
+    <p class="card-text">${musicArray[i].artist.name}</p>
   </div>
-</div>`
+</div>`;
   }
-  
-  window.onload(){
-    loadJSON()
-  }
+}
 
 // START PlAYER
 
@@ -125,3 +123,4 @@ async function loadJSON() {
 // });
 
 // END VOLUME
+loadJSON();
