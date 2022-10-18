@@ -1,24 +1,24 @@
-// async function chargeApi() {
-//   let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
-//   let responseText = await linkArtist.json();
-//   let musicArray = responseText.data;
-// }
+async function chargeApi() {
+  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
+  let responseText = await linkArtist.json();
+  let musicArray = responseText.data;
 
-async function loadJSON() {
-  let musicResponse = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`
-  );
-  let musicObject = await musicResponse.json();
-  let musicArray = musicObject.data;
-  console.log(musicArray);
+  const albumOne = musicArray.slice(0, 4);
+  const albumTwo = musicArray.slice(6, 9);
+  const albumThree = musicArray[14];
+  const albumFour = musicArray.slice(16, 18);
 
-  for (i = 0; i < musicArray.length; i++) {
+  let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
+
+  console.log();
+
+  for (i = 0; i < albumTot.length; i++) {
     let container = document.querySelector("#card-container");
     container.innerHTML += `<div class="card-3 m-3" style="width: 10rem; height: 20%">
-  <img src="${musicArray[i].album.cover_small}" class="card-img-top" alt="...">
+  <img src="${albumTot[i].album.cover_medium}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">${musicArray[i].album.title}</h5>
-    <p class="card-text">${musicArray[i].artist.name}</p>
+    <h5 class="card-title">${albumTot[i].album.title}</h5>
+    <a href="./artist.html"><p class="card-text">${albumTot[i].artist.name}</p></a> 
   </div>
 </div>`;
   }
@@ -123,4 +123,4 @@ async function loadJSON() {
 // });
 
 // END VOLUME
-loadJSON();
+chargeApi();
