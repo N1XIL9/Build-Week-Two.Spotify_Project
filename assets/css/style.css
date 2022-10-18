@@ -11095,11 +11095,104 @@ svg {
   background-color: #1ed760;
 }
 
-.container {
+#container-artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 30vh;
 }
-.container .hsei {
+#container-artist h6, #container-artist .h6 {
   color: white;
+  margin-bottom: 0;
+}
+#container-artist .badgeSpot {
+  width: 30px;
+}
+
+#container-artist-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+#container-artist-btn .play-byn-art {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 6vh;
+  height: 6vh;
+  background-color: #1ed760;
+  border-radius: 2em;
+}
+#container-artist-btn .follow-btn {
+  margin-left: 25px;
+  background-color: #212121;
+  border: 1px solid white;
+  height: 3.5vh;
+  padding: 5px;
+  border-radius: 5px;
+}
+#container-artist-btn .follow-btn h5, #container-artist-btn .follow-btn .h5 {
+  font-size: 1rem;
+}
+#container-artist-btn .bi {
+  margin-left: 15px;
+  color: grey;
+}
+
+.container-artist-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contLCR {
+  display: flex;
+  margin-bottom: 15px;
+}
+.contLCR .leftTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contLCR .leftTitle #numberTrack {
+  color: grey;
+}
+.contLCR .leftTitle .card-img-top {
+  width: 45px;
+}
+.contLCR .leftTitle #albumTitle {
+  color: white;
+}
+.contLCR .centerViews {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contLCR .centerViews #views {
+  color: grey;
+}
+.contLCR .rightTime {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contLCR .rightTime #timeMusic {
+  color: gray;
+}
+
+.cont-stats {
+  display: flex;
+  align-items: center;
+}
+.cont-stats .img-preferite {
+  border-radius: 50%;
+}
+.cont-stats h6, .cont-stats .h6 {
+  color: white;
+  font-size: 0.9rem;
+  margin-left: 15px;
+}
+.cont-stats #albumTitle {
+  color: gray;
+  margin-left: 15px;
 }
 
 .album-cover-box {

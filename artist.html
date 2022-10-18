@@ -71,7 +71,7 @@
             <!-- SECTION CENTER  -->
         
             <div id="main-section" class="col ">
-                <div class="container" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 600px; position:relative;">
+                <div class="container" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="  position:relative;">
 
                     <!-- INIZIO BARRA MAIN -->
                     <div id="main-bar" class="row d-flex justify-content-between">
@@ -102,118 +102,257 @@
                     </div>
                     <!-- FINE BARRA MAIN -->   
                     
-                        <div id="container-artist" >
-                            <h5 class="hsei">Artista verificato</h6>
-                            <h1>NICOLA LERRA</h1>
+
+                    <!-- SECTION ARTIST  -->
+                    <section id="container-artist" > <!-- inserire immagine bg in js-->
+                        <h6><img class="badgeSpot" src="./assets/img/Legitly-Verified-Blue-Badge-top-page.png" alt="badge"> Artista verificato</h6>
+                        <h1>NICOLA LERRA</h1>
+                        <h6>9.360 ascoltatori mensili</h6>
+                    </section>
+                    
+                    <section id="container-artist-btn">
+                        <button class="play-byn-art">►</button>
+                        <button class="follow-btn"><h5>FOLLOWING</h5></button>
+                        <i class="bi bi-three-dots"></i>
+                    </section>
+
+                    <section class="container-artist-title">
+                        <div class="row">
+                            <div class="col-8 text-danger">
+                                <h5>Popolari</h5>
+                            </div>
+
+                            <div class="col-4 text-danger">
+                                <h5>Brani che ti piacciono</h5>
+
+                            </div>
                         </div>
-                
+                    </section>
+
+                    <section class="container">
+                        <div class="row ">
+                            <div class="contLCR col-8">
+                                <div class="leftTitle col-3">
+                                    <div id="numberTrack">1</div> 
+                                    <div><img src="https://picsum.photos/60/60" class="card-img-top"></div>
+                                    <div><h6 id="albumTitle">Titolo</h6></div>
+                                </div>   
+
+                                <div class="centerViews col-5">
+                                    <h6 id="views">2.345.345</h6>
+                                </div> 
+
+                                <div class="rightTime col-4">
+                                    <h6 id="timeMusic">2:35</h6>
+                                </div>    
+                            </div>
+
+                            <!--* START PREFERITE TRACKS  -->
+
+                            <div class="col-4 cont-stats">
+                                <div><img src="https://picsum.photos/60/60" class="img-preferite"></div>
+                                <div>
+                                    <h6>Hai messo Mi piace a 11 Brani</h6>
+                                    <div> <p id="albumTitle"> di Titolo artista</p></div>
+                                </div>
+
+                            </div>
+
+                            <!--! END PREFERITE TRACKS  -->
+
+
+                            <div class="contLCR col-8">
+                                <div class="leftTitle col-3">
+                                    <div id="numberTrack">2</div> 
+                                    <div><img src="https://picsum.photos/60/60" class="card-img-top"></div>
+                                    <div><h6 id="albumTitle">Titolo</h6></div>
+                                </div>   
+
+                                <div class="centerViews col-5">
+                                    <h6 id="views">2.345.345</h6>
+                                </div> 
+
+                                <div class="rightTime col-4">
+                                    <h6 id="timeMusic">2:35</h6>
+                                </div>    
+                            </div>
+
+                            <div class="contLCR col-8">
+                                <div class="leftTitle col-3">
+                                    <div id="numberTrack">3</div> 
+                                    <div><img src="https://picsum.photos/60/60" class="card-img-top"></div>
+                                    <div><h6 id="albumTitle">Titolo</h6></div>
+                                </div>   
+
+                                <div class="centerViews col-5">
+                                    <h6 id="views">2.345.345</h6>
+                                </div> 
+
+                                <div class="rightTime col-4">
+                                    <h6 id="timeMusic">2:35</h6>
+                                </div>    
+                            </div>
+
+                            <div class="contLCR col-8">
+                                <div class="leftTitle col-3">
+                                    <div id="numberTrack">4</div> 
+                                    <div><img src="https://picsum.photos/60/60" class="card-img-top"></div>
+                                    <div><h6 id="albumTitle">Titolo</h6></div>
+                                </div>   
+
+                                <div class="centerViews col-5">
+                                    <h6 id="views">2.345.345</h6>
+                                </div> 
+
+                                <div class="rightTime col-4">
+                                    <h6 id="timeMusic">2:35</h6>
+                                </div>    
+                            </div>
+
+                            <div class="contLCR col-8">
+                                <div class="leftTitle col-3">
+                                    <div id="numberTrack">5</div> 
+                                    <div><img src="https://picsum.photos/60/60" class="card-img-top"></div>
+                                    <div><h6 id="albumTitle">Titolo</h6></div>
+                                </div>   
+
+                                <div class="centerViews col-5">
+                                    <h6 id="views">2.345.345</h6>
+                                </div> 
+
+                                <div class="rightTime col-4">
+                                    <h6 id="timeMusic">2:35</h6>
+                                </div>    
+                            </div>
+
+                            <div class="contLCR col-8">
+                                <div class="leftTitle col-3">
+                                    <div id="numberTrack">6</div> 
+                                    <div><img src="https://picsum.photos/60/60" class="card-img-top"></div>
+                                    <div><h6 id="albumTitle">Titolo</h6></div>
+                                </div>   
+
+                                <div class="centerViews col-5">
+                                    <h6 id="views">2.345.345</h6>
+                                </div> 
+
+                                <div class="rightTime col-4">
+                                    <h6 id="timeMusic">2:35</h6>
+                                </div>    
+                            </div>
+                            
+
+                        </div>
+                    </section>
                 </div>
             </div>              
-
+       
        
         
         
 
-        <!-- SECTION RIGHT -->
-        <div id="rightside" class="col-2 border border-dark pe-2">
-            <div class="row justify-content-between">
-                <div class="col" >
-                    <h6 class="text-white mt-2">Attività amici</h6>
-                </div>
+            <!-- SECTION RIGHT -->
+            <div id="rightside" class="col-2 border border-dark pe-2">
+                <div class="row justify-content-between">
+                    <div class="col" >
+                        <h6 class="text-white mt-2">Attività amici</h6>
+                    </div>
             
             
-                <div class=" col d-flex justify-content-end">
-                    <i class="bi bi-person-plus"></i>
-                    <i class="bi bi-x-lg"></i>   
+                    <div class=" col d-flex justify-content-end">
+                        <i class="bi bi-person-plus"></i>
+                        <i class="bi bi-x-lg"></i>   
+                    </div>
                 </div>
-            </div>
         
         
-            <div>
-                <div class="row friends mt-4">
+                <div>
+                    <div class="row friends mt-4">
+                        <div class="col-3">
+                            <div class="friend friend-1 "></div>
+                        </div>
+                        <div class="col">
+                            <h6>Michael Jackson</h6>
+                            <p class="pt-0" >Michael sta ascoltando Zombie </p>
+                        </div>
+                        <div class="col-2  me-1">
+                            <p>4 ore</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row friends">
+                
                     <div class="col-3">
-                        <div class="friend friend-1 "></div>
+                        <div class="friend friend-1"></div>
                     </div>
                     <div class="col">
-                        <h6>Michael Jackson</h6>
-                     <p class="pt-0" >Michael sta ascoltando Zombie </p>
+                        <h6>Amy winehouse</h6>
+                        <p class="pt-0" >amy ha condiviso un post di Maneskin </p>
                     </div>
                     <div class="col-2  me-1">
                         <p>4 ore</p>
                     </div>
-                </div>
-            </div>
-        
-            <div class="row friends">
-                
-                <div class="col-3">
-                    <div class="friend friend-1"></div>
-                </div>
-                <div class="col">
-                    <h6>Amy winehouse</h6>
-                    <p class="pt-0" >amy ha condiviso un post di Maneskin </p>
-                </div>
-                <div class="col-2  me-1">
-                    <p>4 ore</p>
-                </div>
             
-            </div>
+                </div>
 
-            <div class="row friends ">
+                <div class="row friends ">
 
-                <div class="col-3">
-                    <div class="friend friend-3"></div>
-                </div>
-                <div class="col">
-                    <h6>The Cranberries</h6>
-                    <p class="pt-0" >ha publicato un novo canzone! </p>
-                </div>
-                <div class="col-2  me-1">
-                    <p>4 ore</p>
-                </div>
+                    <div class="col-3">
+                        <div class="friend friend-3"></div>
+                    </div>
+                    <div class="col">
+                        <h6>The Cranberries</h6>
+                        <p class="pt-0" >ha publicato un novo canzone! </p>
+                    </div>
+                    <div class="col-2  me-1">
+                        <p>4 ore</p>
+                    </div>
             
+                </div>
             </div>
+            
+            <!-- START SECTION BOTTOM PLAYER  -->
+            
         </div>
+    </div>
 
-        <!-- START SECTION BOTTOM PLAYER  -->
-        
-         <section id="navbar-bottom">
-            <div id="navbar-left">
-              <img src="https://picsum.photos/60/60" alt="music" />
-              <div class="play-back">
+    <!-- END SECTION BOTTOM PLAYER -->
+    <section id="navbar-bottom">
+        <div id="navbar-left">
+            <img src="https://picsum.photos/60/60" alt="music" />
+            <div class="play-back">
                 <p id="title-song">La Passeggiata</p>
                 <p id="author">Nicola Lerra</p>
-              </div>
-              <i class="bi bi-heart"></i>
+            </div>
+                <i class="bi bi-heart"></i>
             </div>
             <div id="navbar-center">
-              <div class="track-buttons">
+            <div class="track-buttons">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
                 <i class="fa-solid fa-circle-pause" id="pause"></i>
                 <i class="fa-solid fa-circle-play" id="play"></i>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="bi bi-repeat"></i>
-              </div>
-              <div class="trackbar">
+            </div>
+            <div class="trackbar">
                 <p id="current-seconds">0.0</p>
-                <div id="track-seconds"></div>
-                <div class="track-default"></div>
+            <div id="track-seconds"></div>
+            <div class="track-default"></div>
                 <p id="total-seconds">2.56</p>
-              </div>
+            </div>
             </div>
             <div id="navbar-right">
-              <i class="fa-solid fa-bars"></i>
-              <i class="fa-solid fa-computer"></i>
-              <i class="fa-solid fa-volume-off"></i>
-              <div class="volume">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa-solid fa-volume-off"></i>
+            <div class="volume">
                 <div id="volume-set" class="volume-set"></div>
                 <div class="volume-default"></div>
-              </div>
             </div>
-          </section>
-          <!-- END SECTION BOTTOM PLAYER -->
-    </div>
+        </div>
+    </section>
     
 
  
