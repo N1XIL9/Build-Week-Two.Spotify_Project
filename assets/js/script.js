@@ -1,7 +1,7 @@
 async function chargeApi() {
-  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
-  let responseText = await linkArtist.json();
-  let musicArray = responseText.data;
+    let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
+    let responseText = await linkArtist.json();
+    let musicArray = responseText.data;
 }
 
 // async function loadJSON() {
@@ -109,3 +109,4 @@ async function chargeApi() {
 // });
 
 // END VOLUME
+chargeApi();
