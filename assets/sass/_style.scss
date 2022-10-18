@@ -175,17 +175,18 @@ svg {
 }
 
 #navbar-bottom {
-  border-top: 1px solid gray;
-  position: fixed;
-  bottom: 0;
-  height: 90px;
-  background-color: #212121;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  cursor: default;
+    border-top: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+    background-color: #212121;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: default;
+    
 }
 
 #navbar-bottom #navbar-left {
@@ -296,13 +297,132 @@ svg {
 
 // SECTION ARTIST
 
-.container {
-  height: 30vh;
+#container-artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30vh;
 
-  .hsei {
-    color: white;
-  }
+    h6 {
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .badgeSpot {
+        width: 30px;
+    }
 }
+
+// CONTAINER ARTIST BtN 
+#container-artist-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    .play-byn-art
+    {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 6vh;
+        height: 6vh;
+        background-color: #1ed760;
+        border-radius: 2em;
+    }
+
+    .follow-btn {
+        margin-left: 25px;
+        background-color: #212121;
+        border: 1px solid white;
+        height: 3.5vh;
+        padding: 5px;
+        border-radius: 5px;
+        
+        h5{
+            font-size: 1rem;
+        }
+    }
+    .bi {
+        margin-left: 15px;
+        color: grey;
+    }
+}
+
+.container-artist-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+// CONTAINER ARTIST COVER AND StATS 
+
+.contLCR {
+    display: flex;
+    margin-bottom: 15px;
+
+    .leftTitle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        
+        #numberTrack{
+            color: grey;
+        }
+        
+        .card-img-top {
+            width: 45px;
+        }
+
+        #albumTitle {
+            color: white;
+        }
+    }
+
+    .centerViews {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        #views {
+            color: grey;
+        }
+    }
+
+    .rightTime {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        #timeMusic {
+            color: gray;
+        }
+    }
+}
+
+// CONTAINER ARTIST PREFERITE ARTIST
+
+.cont-stats {
+    display: flex;
+    align-items: center;
+
+    .img-preferite {
+        border-radius: 50%;
+    }
+
+    h6 {
+        color: white;
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
+
+    #albumTitle {
+        color: gray;
+        margin-left: 15px;
+    }
+
+    
+}
+
+
+
 
 // section album
 .album-cover-box {
