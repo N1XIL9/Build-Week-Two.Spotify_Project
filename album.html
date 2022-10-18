@@ -70,11 +70,11 @@
             
             <!-- SECTION CENTER  -->
         
-            <div id="main-section" class="col ">
+            <div id="main-section" class="col  ">
 
-                <div class="album-cover-box">
+                <div class="album-cover-box pt-2 px-2 ">
 
-                    <div class="container" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 600px; position:relative;">
+                    <div data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 600px; position:relative;">
 
                         <!-- INIZIO BARRA MAIN -->
                         <div id="main-bar" class="row d-flex justify-content-between">
@@ -90,10 +90,7 @@
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD" alt="">
-                                        
-                                        Giuseppe
-                                        
-                                    </button>
+                                        Giuseppe</button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Account</a></li>
                                         <li><a class="dropdown-item" href="#">Impostazioni</a></li>
@@ -105,7 +102,8 @@
                         </div>
                         <!-- FINE BARRA MAIN -->
                         
-                        <!-- INIZIO JUMBOTRON -->
+                        <!-- INIZIO cover -->
+
                         <div class="row" >
                             <div id="album-cover">
                                 <div id="cover-img" class="shadow"></div>
@@ -125,42 +123,59 @@
                           
                         </div>
                     </div>
-                   
-
-
-
-
                     
                 </div>
 
+                <!-- player centrale -->
                 <div id="album-titles">
                     <div id="center-player" >
-                        <button>play</button>
-                        <button>folloing</button>
-                        <i class="bi bi-three-dots"></i>
+                        
+                             <i class=" center-album-icon bi bi-arrow-right-circle-fill text-success"></i>
+                       
+                        
+                            <i class="center-album-icon bi bi-heart text-light"></i>
+                        
+                            <i class="center-album-icon bi bi-arrow-down-circle text-light"></i>
+
+                            <i class="center-album-icon bi bi-three-dots text-light"></i>
+
                     </div>
                     <div id="titles-box" >
-                        <div class="title-head">sdsd</div>
+                        <div class="title-head text-light row mx-2 mt-4 ">
+                             <div class="col text-white-50" >#TITOLO</div>
+                             <div class="col-2 text-center text-white-50 ">RIPRODUZIONI</div>
+
+                             <div class="col-2 text-center"><i class="bi bi-stopwatch text-white-50"></i></div>
+                             
+                        </div>
+
+                        <div class="title-head text-light row mx-2 mt-4 ">
+                            <div class="col row justify-content-start" >
+                                <div class="col-2">
+                                    <H6>3</H6>
+                                </div>
+
+                                <div class="col">
+                                        <div class="col">
+                                            nome canzone
+                                        </div>
+                                        <div class="col text-white-50">
+                                            descrizione
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-2 text-center text-white-50 ">454546</div>
+                            <div class="col-2 text-center text-white-50">4:55</div>                            
+                       </div>
+                    
                     </div>
                 </div>
 
-
-
-
-                
-                
             </div> <!-- chiusira div centrale -->
 
 
-
-
-
-       
-        
-        
-
         <!-- SECTION RIGHT -->
-        <div id="rightside" class="col-2 border border-dark pe-2">
+        <div id="rightside" class="d-none d-md-block col-2 border border-dark pe-2">
             <div class="row justify-content-between">
                 <div class="col" >
                     <h6 class="text-white mt-2">Attività amici</h6>
@@ -189,7 +204,7 @@
                 </div>
             </div>
         
-            <div class="row friends">
+            <div class="row friends mt-2">
                 
                 <div class="col-3">
                     <div class="friend friend-2"></div>
@@ -204,7 +219,7 @@
             
             </div>
 
-            <div class="row friends ">
+            <div class="row friends mt-2 ">
 
                 <div class="col-3">
                     <div class="friend friend-3"></div>
