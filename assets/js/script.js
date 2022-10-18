@@ -109,4 +109,3 @@ async function chargeApi() {
 // });
 
 // END VOLUME
-chargeApi();

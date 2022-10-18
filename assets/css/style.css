@@ -11125,6 +11125,10 @@ svg {
   background: linear-gradient(0deg, rgba(250, 235, 215, 0) 4%, rgba(250, 235, 215, 0.5) 100%);
 }
 
+#album-name {
+  font-size: 4vw;
+}
+
 .center-album-icon {
   margin: 5px;
 }
