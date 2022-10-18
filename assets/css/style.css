@@ -10834,6 +10834,10 @@ h5,
   margin-bottom: 5px;
 }
 
+a a {
+  text-decoration: none;
+}
+
 p {
   font-size: 0.7rem;
 }
@@ -11068,4 +11072,11 @@ svg {
 
 #navbar-bottom #navbar-right .volume:hover #volume-set {
   background-color: #1ed760;
+}
+
+.container {
+  height: 30vh;
+}
+.container .hsei {
+  color: white;
 }
