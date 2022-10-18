@@ -36,8 +36,6 @@ h2, h3, h5{
 .iconTabsComm{
     margin-bottom: 20px;
 
-   
-
     h6 {
       @include textStyle;
     };
@@ -55,11 +53,14 @@ h2, h3, h5{
         color: $textColor;
     };
 
-
     i {
         margin-left: 5px;
         margin-bottom: 5px;
     }
+}
+
+a {
+  @include textDecoration;
 }
 
 p {
@@ -279,4 +280,16 @@ svg {
   }
   #navbar-bottom #navbar-right .volume:hover #volume-set {
     background-color: #1ED760;
+  }
+
+
+
+  // SECTION ARTIST 
+  
+  .container {
+    height: 30vh;
+
+    .hsei {
+      color:white;
+    };
   }
