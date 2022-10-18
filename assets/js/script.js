@@ -1,14 +1,30 @@
-async function chargeApi() {
-  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
-  let responseText = await linkArtist.json();
-  let musicArray = responseText.data;
-}
-
-// async function loadJSON() {
-//   let musicResponse = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${inputSearch.value}`);
-//   let musicObject = await musicResponse.json();
-//   let musicArray = musicObject.data;
+// async function chargeApi() {
+//   let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
+//   let responseText = await linkArtist.json();
+//   let musicArray = responseText.data;
 // }
+
+async function loadJSON() {
+  let musicResponse = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
+  let musicObject = await musicResponse.json();
+  let musicArray = musicObject.data;
+  console.log(musicArray)
+
+  for (music of musicArray) {
+    let container = document.querySelector('card-container')
+    container.innerHTML += `<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>`
+  }
+  
+  window.onload(){
+    loadJSON()
+  }
 
 // START PlAYER
 

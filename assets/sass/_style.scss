@@ -85,6 +85,9 @@ hr {
   position: sticky;
   top: 0;
   z-index: 99;
+  p {
+    font-size: 0.7rem;
+  }
   i {
     z-index: 99;
   }
@@ -92,6 +95,7 @@ hr {
 
 .dropdown {
   @include dropdownButton;
+  font-size: 0.7rem;
 }
 
 #jumbotron {
