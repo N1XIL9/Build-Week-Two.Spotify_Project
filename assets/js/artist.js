@@ -1,9 +1,10 @@
 let count = 0;
 
 let queryString = new URLSearchParams(window.location.search);
+let id = queryString.get("id");
 
 async function chargeApi() {
-  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
+  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/${id}`);
   let responseText = await linkArtist.json();
   let musicArray = responseText.data;
 
