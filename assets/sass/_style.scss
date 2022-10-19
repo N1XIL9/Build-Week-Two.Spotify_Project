@@ -390,11 +390,30 @@ svg {
 
   .leftTitle {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-top:15px;
 
-    #numberTrack {
-      color: grey;
+    .leftTitle {
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+
+        
+        #numberTrack{
+          margin-right: 10px;
+            color: grey;
+        }
+        
+        .card-img-top {
+          margin-right: 15px;
+          width: 45px;
+        }
+
+        #albumTitle {
+            color: white;
+        }
     }
 
     .card-img-top {
