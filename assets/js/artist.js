@@ -11,9 +11,6 @@ async function chargeApi() {
   let responseTextD = await linkArtistDet.json();
   let musicArray = responseTextD.data;
 
-  console.log(responseTextD);
-
-  console.log(musicArray);
   console.log(responseText);
 
   const albumOne = musicArray.slice(0, 5);
@@ -23,8 +20,6 @@ async function chargeApi() {
 
   let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
 
-  console.log(albumTot);
-
   for (i = 0; i < albumTot.length; i++) {
     let container = document.querySelector("#contLCR");
     count++;
@@ -33,7 +28,7 @@ async function chargeApi() {
     container.innerHTML += ` <div class="leftTitle col-6">
                             <div id="numberTrack">${count}</div>
                             <div><a href=./album.html?id=${albumTot[i].artist.id}> <img src="${albumTot[i].album.cover_xl}" class="card-img-top"/></a></div>
-                            <div><h6 id="albumTitle">${albumTot[i].album.title}</h6></div>
+                            <div> <h6  id="albumTitle">${albumTot[i].album.title}</h6></div>
                           </div>
 
                           <div class="centerViews col-3">
@@ -44,5 +39,13 @@ async function chargeApi() {
                             <h6 id="timeMusic">${albumTot[i].duration}</h6>
                           </div>`;
   }
+
+  let bg = document.getElementById("container-artist");
+  bg.style.backgroundImage = `url('${responseText.picture_big}')`;
+  console.log(bg);
+
+  let titleArti = document.querySelector("#titleArt");
+  titleArti.innerText = `${responseText.name}`;
 }
+
 chargeApi();
