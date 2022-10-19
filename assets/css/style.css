@@ -10943,6 +10943,30 @@ hr {
   color: white;
 }
 
+.card-titles {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+
+#card-container .card {
+  height: 31vh;
+  width: 20vh;
+  margin: 2vh auto;
+  border: none;
+  border-radius: 2px;
+  background-color: black;
+}
+#card-container .card-title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#card-container a {
+  text-decoration: none;
+}
+#card-container .card-text {
+  color: #b2afac;
+}
+
 .friend {
   width: 50px;
   height: 50px;

@@ -61,7 +61,7 @@ h5 {
   }
 
   #text-dec {
-    text-decoration: none
+    text-decoration: none;
   }
 }
 
@@ -154,6 +154,34 @@ hr {
   }
 }
 
+.card-titles {
+  margin: {
+    top: 5vh;
+    bottom: 2vh;
+  }
+}
+
+#card-container {
+  .card {
+    height: 31vh;
+    width: 20vh;
+    margin: 2vh auto;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+  }
+  .card-title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card-text {
+    color: $textColor;
+  }
+}
+
 // SECTION RIGHT
 
 .friend {
@@ -179,18 +207,17 @@ svg {
 }
 
 #navbar-bottom {
-    border-top: 1px solid gray;
-    position: fixed;
-    bottom: 0;
-    height: 90px;
-    background-color: #212121;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    cursor: default;
-    
+  border-top: 1px solid gray;
+  position: fixed;
+  bottom: 0;
+  height: 90px;
+  background-color: #212121;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  cursor: default;
 }
 
 #navbar-bottom #navbar-left {
@@ -302,133 +329,126 @@ svg {
 // SECTION ARTIST
 
 #container-artist {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
 
-    h6 {
-        color: white;
-        margin-bottom: 0;
-    }
+  h6 {
+    color: white;
+    margin-bottom: 0;
+  }
 
-    .badgeSpot {
-        width: 30px;
-    }
+  .badgeSpot {
+    width: 30px;
+  }
 }
 
-// CONTAINER ARTIST BtN 
-#container-artist-btn{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    .play-byn-art
-    {
-        text-align: center;
-        font-size: 1.5rem;
-        width: 6vh;
-        height: 6vh;
-        background-color: #1ed760;
-        border-radius: 2em;
-    }
+// CONTAINER ARTIST BtN
+#container-artist-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  .play-byn-art {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 6vh;
+    height: 6vh;
+    background-color: #1ed760;
+    border-radius: 2em;
+  }
 
-    .follow-btn {
-        margin-left: 25px;
-        background-color: #212121;
-        border: 1px solid white;
-        height: 3.5vh;
-        padding: 5px;
-        border-radius: 5px;
-        
-        h5{
-            font-size: 1rem;
-        }
+  .follow-btn {
+    margin-left: 25px;
+    background-color: #212121;
+    border: 1px solid white;
+    height: 3.5vh;
+    padding: 5px;
+    border-radius: 5px;
+
+    h5 {
+      font-size: 1rem;
     }
-    .bi {
-        margin-left: 15px;
-        color: grey;
-    }
+  }
+  .bi {
+    margin-left: 15px;
+    color: grey;
+  }
 }
 
 .container-artist-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-// CONTAINER ARTIST COVER AND StATS 
+// CONTAINER ARTIST COVER AND StATS
 
 #contLCR {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  .leftTitle {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+    justify-content: space-around;
+    align-items: center;
 
-    .leftTitle {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        
-        #numberTrack{
-            color: grey;
-        }
-        
-        .card-img-top {
-            width: 45px;
-        }
-
-        #albumTitle {
-            color: white;
-        }
+    #numberTrack {
+      color: grey;
     }
 
-    .centerViews {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        #views {
-            color: grey;
-        }
+    .card-img-top {
+      width: 45px;
     }
 
-    .rightTime {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        #timeMusic {
-            color: gray;
-        }
+    #albumTitle {
+      color: white;
     }
+  }
+
+  .centerViews {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    #views {
+      color: grey;
+    }
+  }
+
+  .rightTime {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    #timeMusic {
+      color: gray;
+    }
+  }
 }
 
 // CONTAINER ARTIST PREFERITE ARTIST
 
 .cont-stats {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 
-    .img-preferite {
-        border-radius: 50%;
-    }
+  .img-preferite {
+    border-radius: 50%;
+  }
 
-    h6 {
-        color: white;
-        font-size: 0.9rem;
-        margin-left: 15px;
-    }
+  h6 {
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 15px;
+  }
 
-    #albumTitle {
-        color: gray;
-        margin-left: 15px;
-    }
-
-    
+  #albumTitle {
+    color: gray;
+    margin-left: 15px;
+  }
 }
-
-
-
 
 // section album
 .album-cover-box {
@@ -459,5 +479,5 @@ svg {
 }
 
 .center-album-icon {
-    margin: 5px;
+  margin: 5px;
 }
