@@ -10,7 +10,7 @@ async function chargeApi() {
 
   let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
 
-  console.log();
+  console.log(albumTot);
 
   for (i = 0; i < albumTot.length; i++) {
     let container = document.querySelector("#card-container");
@@ -18,7 +18,18 @@ async function chargeApi() {
   <img id="play" src="${albumTot[i].album.cover_medium}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${albumTot[i].album.title}</h5>
-    <a href="./artist.html"><p class="card-text">${albumTot[i].artist.name}</p></a> 
+    <a href=./artist.html?=${albumTot[i].artist.id}><p class="card-text">${albumTot[i].artist.name}</p></a> 
+  </div>
+</div>`;
+  }
+
+  for (i = 0; i < albumTot.length; i++) {
+    let container = document.querySelector("#artist-container");
+    container.innerHTML += `<div class="card-3 m-3" style="width: 9rem; height: 20%">
+  <img id="play" src="${albumTot[i].album.cover_medium}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${albumTot[i].album.title}</h5>
+    <a href=./artist.html?=${albumTot[i].artist.id}><p class="card-text">${albumTot[i].artist.name}</p></a> 
   </div>
 </div>`;
   }
