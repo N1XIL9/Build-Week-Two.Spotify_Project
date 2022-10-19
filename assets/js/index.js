@@ -28,25 +28,6 @@ async function chargeApi() {
   return;
 }
 
-// for (i = 0; i < albumTot.length; i++) {
-//   let trackList = document.querySelector("#contLCR");
-//   count++;
-//   console.log(count);
-//   console.log(trackList);
-//   trackList.innerHTML += ` <div class="leftTitle col-3">
-//                             <div id="numberTrack">${count}</div>
-//                             <div><img src="${albumTot[i].album.cover_xl}" class="card-img-top" /></div>
-//                             <div><h6 id="albumTitle">${albumTot[i].album.title}</h6></div>
-//                           </div>
-
-//                           <div class="centerViews col-5">
-//                             <h6 id="views">2.345.345</h6>
-//                           </div>
-
-//                           <div class="rightTime col-4">
-//                             <h6 id="timeMusic">2:35</h6>
-//                           </div>`;
-// }
 // START PlAYER
 
 let timer = 0;
