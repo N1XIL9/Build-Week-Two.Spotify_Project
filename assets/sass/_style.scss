@@ -390,30 +390,22 @@ svg {
 
   .leftTitle {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 15px;
-    margin-top:15px;
+    margin-top: 15px;
 
-    .leftTitle {
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        margin-bottom: 10px;
+    #numberTrack {
+      margin-right: 10px;
+      color: grey;
+    }
 
-        
-        #numberTrack{
-          margin-right: 10px;
-            color: grey;
-        }
-        
-        .card-img-top {
-          margin-right: 15px;
-          width: 45px;
-        }
+    .card-img-top {
+      margin-right: 15px;
+      width: 45px;
+    }
 
-        #albumTitle {
-            color: white;
-        }
+    #albumTitle {
+      color: white;
     }
 
     .card-img-top {
@@ -490,11 +482,7 @@ svg {
 
 #album-titles {
   background: rgb(250, 235, 215);
-  background: linear-gradient(
-    0deg,
-    rgba(250, 235, 215, 0) 4%,
-    rgba(250, 235, 215, 0.5) 100%
-  );
+  background: linear-gradient(0deg, rgba(250, 235, 215, 0) 4%, rgba(250, 235, 215, 0.5) 100%);
 }
 
 .center-album-icon {

@@ -6,7 +6,15 @@ let id = queryString.get("id");
 async function chargeApi() {
   let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/${id}`);
   let responseText = await linkArtist.json();
-  let musicArray = responseText.data;
+
+  let linkArtistDet = await fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra");
+  let responseTextD = await linkArtistDet.json();
+  let musicArray = responseTextD.data;
+
+  console.log(responseTextD);
+
+  console.log(musicArray);
+  console.log(responseText);
 
   const albumOne = musicArray.slice(0, 5);
   const albumTwo = musicArray.slice(7, 9);

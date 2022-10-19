@@ -11184,25 +11184,19 @@ svg {
 }
 #contLCR .leftTitle {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-#contLCR .leftTitle .leftTitle {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 10px;
-}
-#contLCR .leftTitle .leftTitle #numberTrack {
+#contLCR .leftTitle #numberTrack {
   margin-right: 10px;
   color: grey;
 }
-#contLCR .leftTitle .leftTitle .card-img-top {
+#contLCR .leftTitle .card-img-top {
   margin-right: 15px;
   width: 45px;
 }
-#contLCR .leftTitle .leftTitle #albumTitle {
+#contLCR .leftTitle #albumTitle {
   color: white;
 }
 #contLCR .leftTitle .card-img-top {
