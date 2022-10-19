@@ -1,7 +1,7 @@
 let count = 0;
 
 async function chargeApi() {
-  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
+  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist`);
   let responseText = await linkArtist.json();
   let musicArray = responseText.data;
 

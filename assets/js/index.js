@@ -20,7 +20,7 @@ async function chargeApi() {
    <img id="play" src="${albumTot[i].album.cover_xl}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${albumTot[i].album.title}</h5>
-    <a href=./artist.html?=${albumTot[i].artist.id}><p class="card-text">${albumTot[i].artist.name}</p></a>
+    <a href=./artist.html?id=${albumTot[i].artist.id}><p class="card-text">${albumTot[i].artist.name}</p></a>
    </div>
   </div>`;
   }
