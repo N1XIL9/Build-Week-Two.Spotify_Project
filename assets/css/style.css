@@ -11153,44 +11153,46 @@ svg {
   margin-bottom: 20px;
 }
 
-.contLCR {
+#contLCR {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 15px;
 }
-.contLCR .leftTitle {
+#contLCR .leftTitle {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.contLCR .leftTitle #numberTrack {
+#contLCR .leftTitle #numberTrack {
   color: grey;
 }
-.contLCR .leftTitle .card-img-top {
+#contLCR .leftTitle .card-img-top {
   width: 45px;
 }
-.contLCR .leftTitle #albumTitle {
+#contLCR .leftTitle #albumTitle {
   color: white;
 }
-.contLCR .centerViews {
+#contLCR .centerViews {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.contLCR .centerViews #views {
+#contLCR .centerViews #views {
   color: grey;
 }
-.contLCR .rightTime {
+#contLCR .rightTime {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.contLCR .rightTime #timeMusic {
+#contLCR .rightTime #timeMusic {
   color: gray;
 }
 
 .cont-stats {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .cont-stats .img-preferite {
   border-radius: 50%;

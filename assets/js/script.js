@@ -1,12 +1,14 @@
+let count = 0;
+
 async function chargeApi() {
   let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
   let responseText = await linkArtist.json();
   let musicArray = responseText.data;
 
   const albumOne = musicArray.slice(0, 4);
-  const albumTwo = musicArray.slice(6, 9);
+  const albumTwo = musicArray.slice(7, 9);
   const albumThree = musicArray[14];
-  const albumFour = musicArray.slice(16, 18);
+  const albumFour = musicArray.slice(17, 19);
 
   let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
 
@@ -15,26 +17,36 @@ async function chargeApi() {
   for (i = 0; i < albumTot.length; i++) {
     let container = document.querySelector("#card-container");
     container.innerHTML += `<div class="card-3 m-3" style="width: 9rem; height: 20%">
-  <img id="play" src="${albumTot[i].album.cover_medium}" class="card-img-top" alt="...">
+   <img id="play" src="${albumTot[i].album.cover_xl}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${albumTot[i].album.title}</h5>
-    <a href=./artist.html?=${albumTot[i].artist.id}><p class="card-text">${albumTot[i].artist.name}</p></a> 
-  </div>
-</div>`;
+    <a href=./artist.html?=${albumTot[i].artist.id}><p class="card-text">${albumTot[i].artist.name}</p></a>
+   </div>
+  </div>`;
   }
 
-  for (i = 0; i < albumTot.length; i++) {
-    let container = document.querySelector("#artist-container");
-    container.innerHTML += `<div class="card-3 m-3" style="width: 9rem; height: 20%">
-  <img id="play" src="${albumTot[i].album.cover_medium}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${albumTot[i].album.title}</h5>
-    <a href=./artist.html?=${albumTot[i].artist.id}><p class="card-text">${albumTot[i].artist.name}</p></a> 
-  </div>
-</div>`;
-  }
+  return;
 }
 
+// for (i = 0; i < albumTot.length; i++) {
+//   let trackList = document.querySelector("#contLCR");
+//   count++;
+//   console.log(count);
+//   console.log(trackList);
+//   trackList.innerHTML += ` <div class="leftTitle col-3">
+//                             <div id="numberTrack">${count}</div>
+//                             <div><img src="${albumTot[i].album.cover_xl}" class="card-img-top" /></div>
+//                             <div><h6 id="albumTitle">${albumTot[i].album.title}</h6></div>
+//                           </div>
+
+//                           <div class="centerViews col-5">
+//                             <h6 id="views">2.345.345</h6>
+//                           </div>
+
+//                           <div class="rightTime col-4">
+//                             <h6 id="timeMusic">2:35</h6>
+//                           </div>`;
+// }
 // START PlAYER
 
 let timer = 0;

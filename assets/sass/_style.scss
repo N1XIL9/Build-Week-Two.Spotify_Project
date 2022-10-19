@@ -357,8 +357,9 @@ svg {
 
 // CONTAINER ARTIST COVER AND StATS 
 
-.contLCR {
+#contLCR {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 15px;
 
     .leftTitle {
@@ -406,6 +407,7 @@ svg {
 .cont-stats {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 
     .img-preferite {
         border-radius: 50%;
