@@ -11157,16 +11157,20 @@ svg {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 #contLCR .leftTitle {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 10px;
 }
 #contLCR .leftTitle #numberTrack {
+  margin-right: 10px;
   color: grey;
 }
 #contLCR .leftTitle .card-img-top {
+  margin-right: 15px;
   width: 45px;
 }
 #contLCR .leftTitle #albumTitle {

@@ -361,19 +361,23 @@ svg {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    margin-top:15px;
 
     .leftTitle {
         display: flex;
-        justify-content: space-around;
+        justify-content:flex-start;
         align-items: center;
+        margin-bottom: 10px;
 
         
         #numberTrack{
+          margin-right: 10px;
             color: grey;
         }
         
         .card-img-top {
-            width: 45px;
+          margin-right: 15px;
+          width: 45px;
         }
 
         #albumTitle {
