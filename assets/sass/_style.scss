@@ -13,7 +13,6 @@ h2,
 h3,
 h5 {
   color: $titleColor;
-  margin-top: 4vh;
 }
 
 .container-fluid {
@@ -100,6 +99,10 @@ hr {
 
 #main-section {
   @include bgColorGradient;
+
+  @include xs {
+    background: black;
+  }
   .bi {
     @include mainIconStyle;
     font-size: 2rem;
@@ -110,6 +113,7 @@ hr {
 }
 
 #main-bar {
+  width: 88%;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -170,7 +174,7 @@ hr {
   .bi {
     color: white;
     margin: {
-      right: 4vh;
+      right: 1vh;
     }
     @include md {
       display: none;
@@ -184,8 +188,14 @@ hr {
 #playlist {
   .playlist-box {
     @include playlistBoxes;
+    @media screen and (max-width: 374px) {
+      width: 96%;
+    }
     @include lg {
       width: 30%;
+    }
+    @include xs {
+      background-color: transparent;
     }
   }
 }
@@ -206,7 +216,7 @@ hr {
 #card-container {
   .card {
     height: 67vh;
-    width: 53vh;
+    width: 100%;
     margin: 2vh auto;
     border: none;
     border-radius: 2px;
@@ -220,6 +230,12 @@ hr {
   .card-title {
     font-size: 1rem;
     font-weight: 400;
+    h5 {
+      margin-top: 4vh;
+      @include xs {
+        margin: 4vh;
+      }
+    }
   }
 
   .card-body {

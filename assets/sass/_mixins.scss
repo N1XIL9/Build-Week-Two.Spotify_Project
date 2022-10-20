@@ -25,7 +25,7 @@
 
 @mixin dropdownButton {
   button {
-    width: 23vh;
+    width: 20vh;
 
     border: none;
     border-radius: 3em;
@@ -73,6 +73,9 @@
     right: 2vh;
   }
   img {
+    @include xs {
+      width: 7vh;
+    }
     width: 11vh;
   }
   p {

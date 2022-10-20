@@ -18,7 +18,7 @@ async function chargeApi() {
 
   for (i = 0; i < albumTot.length; i++) {
     let container = document.querySelector("#card-container");
-    container.innerHTML += `<div class="card col-3">
+    container.innerHTML += `<div class="card col-12">
    <a href=./album.html?id=${albumTot[i].album.id}><img id="play" src="${albumTot[i].album.cover_xl}" class="card-img-top" alt="...">
   <div class="card-body">
     <a href=./album.html?id=${albumTot[i].album.id}><h5 class="card-title">${albumTot[i].album.title}</h5></a>
