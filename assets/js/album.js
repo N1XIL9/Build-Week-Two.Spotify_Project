@@ -28,7 +28,7 @@ window.onload = async () => {
                     
                                 <div class="col">
                                     <div class="col">${t.title}</div>
-                                    <div class="col text-white-50">${t.artist.name}</div>
+                                    <div class="col text-white-50"><a href=./artist.html?id=${t.artist.id}>${t.artist.name}</a></div>
                                 </div>
                             </div>
                             <div class="col-2 text-center text-white-50">${t.rank}</div>
