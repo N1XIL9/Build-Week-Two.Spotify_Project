@@ -11095,6 +11095,17 @@ hr {
   }
 }
 
+@media (min-width: 992px) {
+  #ore {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #ore {
+    display: block;
+  }
+}
+
 .friend-1 {
   background-image: url(https://s2.r29static.com/bin/entry/c3f/x,80/2208446/image.jpg);
 }
