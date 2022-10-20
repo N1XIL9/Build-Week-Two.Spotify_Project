@@ -11040,7 +11040,7 @@ hr {
 }
 
 #card-container .card {
-  height: 67vh;
+  height: auto;
   width: 100%;
   margin: 2vh auto;
   border: none;
