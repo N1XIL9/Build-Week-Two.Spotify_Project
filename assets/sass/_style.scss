@@ -221,12 +221,13 @@ hr {
 
 #card-container {
   .card {
-    height: 67vh;
+    height: auto;
     width: 100%;
     margin: 2vh auto;
     border: none;
     border-radius: 2px;
     background-color: black;
+
     @include md {
       height: 40vh;
       width: 20vh;
