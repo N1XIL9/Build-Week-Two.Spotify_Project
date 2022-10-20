@@ -10788,6 +10788,7 @@ h3,
 h5,
 .h5 {
   color: white;
+  margin-top: 4vh;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -10804,8 +10805,15 @@ h5,
 
 #leftSide,
 #rightside {
+  display: none;
   background-color: black;
   color: #b2afac;
+}
+@media (min-width: 768px) {
+  #leftSide,
+#rightside {
+    display: block;
+  }
 }
 
 .iconTabsComm {
@@ -10874,10 +10882,17 @@ hr {
 }
 #main-bar i {
   z-index: 99;
+  display: none;
+}
+@media (min-width: 768px) {
+  #main-bar i {
+    display: block;
+  }
 }
 
 .dropdown {
   font-size: 0.7rem;
+  display: none;
 }
 .dropdown button {
   width: 80%;
@@ -10893,8 +10908,14 @@ hr {
 .dropdown ul {
   background-color: #b2afac;
 }
+@media (min-width: 768px) {
+  .dropdown {
+    display: block;
+  }
+}
 
 #jumbotron {
+  display: none;
   background-color: black;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -10927,16 +10948,21 @@ hr {
   color: black;
   border: none;
 }
+@media (min-width: 768px) {
+  #jumbotron {
+    display: flex;
+  }
+}
 
 #playlist .playlist-box {
   background-color: #2e2d2d;
-  width: 30%;
+  width: 46%;
   padding: 0;
   margin-top: 2vh;
   margin-right: 2vh;
 }
 #playlist img {
-  width: 8vh;
+  width: 11vh;
 }
 #playlist p {
   margin-left: 1vh;
@@ -10947,14 +10973,28 @@ hr {
   margin-top: 5vh;
   margin-bottom: 2vh;
 }
+.card-titles h5, .card-titles .h5 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .card-titles h5, .card-titles .h5 {
+    display: flex;
+  }
+}
 
 #card-container .card {
-  height: 31vh;
-  width: 20vh;
+  height: 67vh;
+  width: 53vh;
   margin: 2vh auto;
   border: none;
   border-radius: 2px;
   background-color: black;
+}
+@media (min-width: 768px) {
+  #card-container .card {
+    height: 31vh;
+    width: 20vh;
+  }
 }
 #card-container .card-title {
   font-size: 1rem;
