@@ -250,6 +250,9 @@ hr {
     text-align: center;
     margin: 0;
   }
+  @include lg {
+    display: none;
+  }
 }
 
 // SECTION BOTTOM PLAYER
@@ -550,7 +553,11 @@ svg {
 
 #album-titles {
   background: rgb(250, 235, 215);
-  background: linear-gradient(0deg, rgba(250, 235, 215, 0) 4%, rgba(250, 235, 215, 0.5) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(250, 235, 215, 0) 4%,
+    rgba(250, 235, 215, 0.5) 100%
+  );
 }
 
 .center-album-icon {

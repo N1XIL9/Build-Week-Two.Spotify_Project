@@ -11156,6 +11156,11 @@ hr {
   text-align: center;
   margin: 0;
 }
+@media (min-width: 992px) {
+  #list-menu-bottom {
+    display: none;
+  }
+}
 
 svg {
   margin-right: 17px;
