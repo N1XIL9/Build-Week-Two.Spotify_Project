@@ -140,7 +140,7 @@
     background-color: black;
 
     @include md {
-      height: 32vh;
+      height: 34vh;
       width: 21vh;
     }
 
@@ -151,6 +151,7 @@
   .card-title {
     font-size: 1rem;
     font-weight: 400;
+    margin-top: 1vh;
     h5 {
       margin-top: 4vh;
       @include xs {

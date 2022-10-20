@@ -10797,7 +10797,9 @@ h5,
 }
 
 #main-container {
-  height: 100vh;
+  height: 100%;
+  background: rgb(65, 64, 63);
+  background: linear-gradient(180deg, rgb(46, 45, 44) 0%, rgb(16, 15, 15) 46%);
 }
 
 .bi {
@@ -10872,10 +10874,6 @@ hr {
   columns: #b2afac;
 }
 
-#main-section {
-  background: rgb(65, 64, 63);
-  background: linear-gradient(180deg, rgb(46, 45, 44) 0%, rgb(16, 15, 15) 46%);
-}
 @media (max-width: 576px) {
   #main-section {
     background: black;
@@ -11044,7 +11042,7 @@ hr {
 }
 @media (min-width: 768px) {
   #card-container .card {
-    height: 32vh;
+    height: 34vh;
     width: 21vh;
   }
 }
@@ -11056,6 +11054,7 @@ hr {
 #card-container .card-title {
   font-size: 1rem;
   font-weight: 400;
+  margin-top: 1vh;
 }
 #card-container .card-title h5, #card-container .card-title .h5 {
   margin-top: 4vh;
@@ -11093,6 +11092,47 @@ hr {
 
 .friend-3 {
   background-image: url(https://www.tonica.la/__export/1599499388876/sites/debate/img/2020/09/07/dolores_oxriordan-the_cranberries-49_aniversario.jpg_423682103.jpg);
+}
+
+#mini-player {
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #282828;
+  margin: 0 auto;
+  width: 95%;
+  height: 6vh;
+}
+@media (min-width: 992px) {
+  #mini-player {
+    display: none;
+  }
+}
+#mini-player h5, #mini-player .h5 {
+  width: 89%;
+  font-size: 1rem;
+}
+
+#list-menu-bottom {
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0);
+  height: 6vh;
+  margin-top: 2vh;
+}
+#list-menu-bottom i {
+  margin-top: 1vh;
+}
+#list-menu-bottom a {
+  margin-top: 1vh;
+}
+#list-menu-bottom #text-dec,
+#list-menu-bottom h6,
+#list-menu-bottom .h6,
+#list-menu-bottom .bi,
+#list-menu-bottom .bi h6 {
+  text-align: center;
+  margin: 0;
 }
 
 svg {
