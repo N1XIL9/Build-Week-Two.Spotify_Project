@@ -31,9 +31,19 @@ h5 {
 
 #leftSide,
 #rightside {
-  display: none;
   background-color: $sideColor;
   color: $textColor;
+}
+
+#rightside {
+  display: none;
+  @include md {
+    display: block;
+  }
+}
+
+#leftSide {
+  display: none;
   @include md {
     display: block;
   }
@@ -152,22 +162,24 @@ hr {
   }
 }
 
-#playlist {
-  .playlist-box {
-    background-color: $bgColorBox;
-    width: 46%;
-    padding: 0;
+#title-icons {
+  .bi {
+    color: white;
     margin: {
-      top: 2vh;
-      right: 2vh;
+      right: 4vh;
+    }
+    @include md {
+      display: none;
     }
   }
-  img {
-    width: 11vh;
-  }
-  p {
-    margin-left: 1vh;
-    color: white;
+}
+
+#playlist {
+  .playlist-box {
+    @include playlistBoxes;
+    @include lg {
+      width: 30%;
+    }
   }
 }
 
@@ -250,6 +262,10 @@ svg {
   align-items: center;
   color: white;
   cursor: default;
+  display: none;
+  @include md {
+    display: flex;
+  }
 }
 
 #navbar-bottom #navbar-left {
