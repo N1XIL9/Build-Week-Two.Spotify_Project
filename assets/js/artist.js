@@ -28,10 +28,10 @@ async function chargeApi() {
     // console.log(count);
     // console.log(container);
     container.innerHTML += ` <div class="leftTitle col-6">
-                            <div id="numberTrack">${count}</div>
-                            <div><a href=./album.html?id=${musicArray[i].album.id}> <img src="${musicArray[i].album.cover_xl}" class="card-img-top"/></a></div>
-                            <div> <h6  id="albumTitle">${musicArray[i].album.title}</h6></div>
-                          </div>
+                              <div id="numberTrack">${count}</div>
+                              <div><a href=./album.html?id=${musicArray[i].album.id}> <img src="${musicArray[i].album.cover_xl}" class="card-img-top"/></a></div>
+                              <div> <h6  id="albumTitle">${musicArray[i].album.title}</h6></div>
+                            </div>
 
                           <div class="centerViews col-3">
                             <h6 id="views">${musicArray[i].rank}</h6>
