@@ -10950,6 +10950,14 @@ hr {
 #jumbotron img {
   width: 100%;
 }
+#jumbotron h1, #jumbotron .h1 {
+  font-size: 3rem;
+}
+@media (min-width: 1400px) {
+  #jumbotron h1, #jumbotron .h1 {
+    font-size: 4rem;
+  }
+}
 #jumbotron h5, #jumbotron .h5 {
   margin-top: 2vh;
 }
@@ -10978,12 +10986,13 @@ hr {
 @media (min-width: 768px) {
   #jumbotron {
     display: flex;
+    align-items: center;
   }
 }
 
 #title-icons .bi {
   color: white;
-  margin-right: 4vh;
+  margin-right: 1vh;
 }
 @media (min-width: 768px) {
   #title-icons .bi {
