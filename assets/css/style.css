@@ -10973,8 +10973,13 @@ hr {
   color: white;
   margin-right: 4vh;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #title-icons .bi {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #title-icons {
     display: none;
   }
 }
