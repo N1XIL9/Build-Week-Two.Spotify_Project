@@ -12,7 +12,7 @@ window.onload = async () => {
 
     document.querySelector("#album-cover").innerHTML = `
             
-            <img src="${albumArray.cover}" alt="" id="cover-img" class="shadow mt-4 mt-md-0" />
+            <img src="${albumArray.cover}" alt="" id="cover-img" class="shadow m-4 " />
            
             <div id="album-info" class="ps-4 mt-5 text-dark">
                 <p class=" d-none d-sm-block">ALBUM</p>
