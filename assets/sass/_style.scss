@@ -472,7 +472,7 @@ svg {
 .album-cover-box {
     width: 100%;
     height: auto;
-    background-color: antiquewhite;
+    background-color: rgb(230, 216, 198);
 }
 
 #album-cover {
@@ -503,9 +503,11 @@ svg {
     transition: 0.2s ease-in-out;
 }
 
-.song-to-play {
+.song-to-play,
+.artist-name,
+#author {
     @include textDecoration;
-    color: $titleColor;
+
     a {
         color: $textColor;
     }
