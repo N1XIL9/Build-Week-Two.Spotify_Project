@@ -1,5 +1,8 @@
 window.onload = async () => {
-    let res = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/292131562");
+    let queryString = new URLSearchParams(window.location.search);
+    let id = queryString.get("id");
+
+    let res = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${id}`);
     let albumArray = await res.json();
     console.log(albumArray);
 

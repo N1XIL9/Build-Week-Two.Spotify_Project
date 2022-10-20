@@ -11270,4 +11270,5 @@ svg {
 
 .track-div-box:hover {
   background-color: rgba(255, 255, 255, 0.093);
+  transition: 3s ease-in-out;
 }
