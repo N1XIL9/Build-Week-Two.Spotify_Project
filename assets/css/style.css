@@ -10788,6 +10788,7 @@ h3,
 h5,
 .h5 {
   color: white;
+  margin-top: 4vh;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -10902,10 +10903,16 @@ hr {
 }
 #main-bar i {
   z-index: 99;
+}
+#main-bar i p {
+  font-size: 0.7rem;
+}
+#main-bar i i {
+  z-index: 99;
   display: none;
 }
 @media (min-width: 768px) {
-  #main-bar i {
+  #main-bar i i {
     display: block;
   }
 }
@@ -10976,7 +10983,7 @@ hr {
 
 #title-icons .bi {
   color: white;
-  margin-right: 1vh;
+  margin-right: 4vh;
 }
 @media (min-width: 768px) {
   #title-icons .bi {
