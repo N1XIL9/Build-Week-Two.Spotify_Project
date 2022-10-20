@@ -10983,11 +10983,6 @@ hr {
     display: none;
   }
 }
-@media (min-width: 992px) {
-  #title-icons {
-    display: none;
-  }
-}
 
 #playlist .playlist-box {
   background-color: #2e2d2d;
@@ -11041,7 +11036,7 @@ hr {
 
 #card-container .card {
   height: auto;
-  width: 100%;
+  width: 45%;
   margin: 2vh auto;
   border: none;
   border-radius: 2px;
@@ -11049,9 +11044,13 @@ hr {
 }
 @media (min-width: 768px) {
   #card-container .card {
-    height: 40vh;
-    width: 20vh;
-    margin: 6vh auto;
+    height: 32vh;
+    width: 21vh;
+  }
+}
+@media (min-width: 1400px) {
+  #card-container .card {
+    width: 22vh;
   }
 }
 #card-container .card-title {

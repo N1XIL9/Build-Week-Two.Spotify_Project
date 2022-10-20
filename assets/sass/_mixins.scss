@@ -83,6 +83,94 @@
     color: white;
   }
 }
+
+@mixin mainBar {
+  width: 88%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  p {
+    font-size: 0.7rem;
+  }
+  i {
+    z-index: 99;
+    display: none;
+    @include md {
+      display: block;
+    }
+  }
+}
+
+@mixin jumbotron {
+  display: none;
+  background-color: $sideColor;
+  margin: {
+    top: 2vh;
+    bottom: 2vh;
+  }
+  img {
+    width: 100%;
+  }
+  h5 {
+    margin-top: 2vh;
+  }
+  p {
+    margin-top: 2vh;
+    color: $titleColor;
+    font-weight: 400;
+  }
+
+  button {
+    @include genericButton;
+  }
+  #btn-play {
+    background-color: #1ed760;
+    color: black;
+    border: none;
+  }
+}
+
+@mixin albums {
+  .card {
+    height: auto;
+    width: 45%;
+    margin: 2vh auto;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+
+    @include md {
+      height: 32vh;
+      width: 21vh;
+    }
+
+    @include xxl {
+      width: 22vh;
+    }
+  }
+  .card-title {
+    font-size: 1rem;
+    font-weight: 400;
+    h5 {
+      margin-top: 4vh;
+      @include xs {
+        margin: 4vh;
+      }
+    }
+  }
+
+  .card-body {
+    padding-top: 0;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card-text {
+    color: $textColor;
+  }
+}
+
 // SECTION BOTTOM PLAYER
 
 // MEDIAQUERIES

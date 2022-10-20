@@ -113,20 +113,7 @@ hr {
 }
 
 #main-bar {
-  width: 88%;
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  p {
-    font-size: 0.7rem;
-  }
-  i {
-    z-index: 99;
-    display: none;
-    @include md {
-      display: block;
-    }
-  }
+  @include mainBar;
 }
 
 .dropdown {
@@ -139,32 +126,7 @@ hr {
 }
 
 #jumbotron {
-  display: none;
-  background-color: $sideColor;
-  margin: {
-    top: 2vh;
-    bottom: 2vh;
-  }
-  img {
-    width: 100%;
-  }
-  h5 {
-    margin-top: 2vh;
-  }
-  p {
-    margin-top: 2vh;
-    color: $titleColor;
-    font-weight: 400;
-  }
-
-  button {
-    @include genericButton;
-  }
-  #btn-play {
-    background-color: #1ed760;
-    color: black;
-    border: none;
-  }
+  @include jumbotron;
   @include md {
     display: flex;
   }
@@ -179,9 +141,6 @@ hr {
     @include md {
       display: none;
     }
-  }
-  @include lg {
-    display: none;
   }
 }
 
@@ -214,41 +173,7 @@ hr {
 }
 
 #card-container {
-  .card {
-    height: auto;
-    width: 100%;
-    margin: 2vh auto;
-    border: none;
-    border-radius: 2px;
-    background-color: black;
-
-    @include md {
-      height: 40vh;
-      width: 20vh;
-      margin: 6vh auto;
-    }
-  }
-  .card-title {
-    font-size: 1rem;
-    font-weight: 400;
-    h5 {
-      margin-top: 4vh;
-      @include xs {
-        margin: 4vh;
-      }
-    }
-  }
-
-  .card-body {
-    padding-top: 0;
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-  }
-  .card-text {
-    color: $textColor;
-  }
+  @include albums;
 }
 
 // SECTION RIGHT
