@@ -17,19 +17,19 @@ window.onload = async () => {
         <h1 id="album-name-album">${albumArray.title}</h1>
         <p>
             <img src="https://img.freepik.com/premium-vector/hipster-frofile-hat-with-glasses_6229-762.jpg?w=2000" alt="" class="rounded img-fluid" width="20px" />
-            <span class="artist-name">${albumArray.artist.name} - ${albumArray.release_date.substring(0, 4)} - ${albumArray.nb_tracks}, ${secToMin(albumArray.duration)} min </span>
+            <span class="artist-name"><a href=./artist.html?id=${albumArray.artist.id}>${albumArray.artist.name}</a> - ${albumArray.release_date.substring(0, 4)} - ${albumArray.nb_tracks}, ${secToMin(
+        albumArray.duration
+    )} min </span>
         </p>
     </div>`;
 
     document.querySelector("#navbar-left").innerHTML = `
     <img id="player-cover-b" src="${albumArray.cover_small}" alt="music" />
                     <div class="play-back">
-                        <p id="title-song">${albumArray.title}</p>
-                        <p id="author">${albumArray.artist.name}</p>
+                        <p id="title-song"></p>
+                        <p id="author"><a href=./artist.html?id=${albumArray.artist.id}>${albumArray.artist.name}</a></p>
                     </div>
-                    <i class="bi bi-heart"></i>
-    
-    `;
+                    <i class="bi bi-heart"></i>`;
 
     for (let t of albumArray.tracks.data) {
         let trackDiv = document.querySelector("#track-list-album");
@@ -41,7 +41,7 @@ window.onload = async () => {
                                 </div>
                     
                                 <div class="col links-of-list">
-                                    <div class="col song-to-play"><a>${t.title}</a></div>
+                                    <div class="col song-to-play"><a class="song-name">${t.title}</a></div>
                                     <div class="col song-to-play text-white-50"><a href=./artist.html?id=${t.artist.id}>${t.artist.name}</a></div>
                                 </div>
                             </div>
@@ -50,5 +50,12 @@ window.onload = async () => {
                         </div>`;
     }
 
-    document.querySelector();
+    document.querySelector(".song-name").onclick = function () {
+        myFunction();
+    };
+
+    function myFunction() {
+        let trackName = document.querySelector(".song-name").textContent;
+        document.getElementById("title-song").innerHTML = trackName;
+    }
 };

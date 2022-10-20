@@ -11321,7 +11321,7 @@ svg {
 .album-cover-box {
   width: 100%;
   height: auto;
-  background-color: antiquewhite;
+  background-color: rgb(230, 216, 198);
 }
 
 #album-cover {
@@ -11351,12 +11351,13 @@ svg {
   transition: 0.2s ease-in-out;
 }
 
-.song-to-play {
-  color: white;
-}
-.song-to-play a {
+.song-to-play a,
+.artist-name a,
+#author a {
   text-decoration: none;
 }
-.song-to-play a {
+.song-to-play a,
+.artist-name a,
+#author a {
   color: #b2afac;
 }
