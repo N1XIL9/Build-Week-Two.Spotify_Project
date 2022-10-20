@@ -33,6 +33,7 @@ window.onload = async () => {
 
     for (let t of albumArray.tracks.data) {
         let trackDiv = document.querySelector("#track-list-album");
+        console.log(t);
         trackDiv.innerHTML += `
         <div class="title-head text-light row mx-2 mt-4 track-div-box">
                             <div class="col row justify-content-start ">
@@ -41,21 +42,18 @@ window.onload = async () => {
                                 </div>
                     
                                 <div class="col links-of-list">
-                                    <div class="col song-to-play"><a class="song-name">${t.title}</a></div>
+                                    <div class="col song-to-play"><a class="song-name" onclick="myFunction('${t.title}','${t.preview}')">${t.title}</a></div>
                                     <div class="col song-to-play text-white-50"><a href=./artist.html?id=${t.artist.id}>${t.artist.name}</a></div>
                                 </div>
                             </div>
                             <div class="col-2 text-center text-white-50">${t.rank}</div>
                             <div class="col-2 text-center text-white-50">${secToMin(t.duration)} min </div>
                         </div>`;
-    }
 
-    document.querySelector(".song-name").onclick = function () {
-        myFunction();
-    };
-
-    function myFunction() {
-        let trackName = document.querySelector(".song-name").textContent;
-        document.getElementById("title-song").innerHTML = trackName;
+        console.log(t.title);
     }
 };
+
+function myFunction(nome, previw) {
+    document.getElementById("title-song").innerHTML = nome;
+}
