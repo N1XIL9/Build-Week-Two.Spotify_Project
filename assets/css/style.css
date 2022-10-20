@@ -10992,13 +10992,17 @@ hr {
 }
 @media (min-width: 768px) {
   #card-container .card {
-    height: 31vh;
+    height: 40vh;
     width: 20vh;
+    margin: 6vh auto;
   }
 }
 #card-container .card-title {
   font-size: 1rem;
   font-weight: 400;
+}
+#card-container .card-body {
+  padding-top: 0;
 }
 #card-container a {
   text-decoration: none;
