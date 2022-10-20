@@ -10903,16 +10903,10 @@ hr {
 }
 #main-bar i {
   z-index: 99;
-}
-#main-bar i p {
-  font-size: 0.7rem;
-}
-#main-bar i i {
-  z-index: 99;
   display: none;
 }
 @media (min-width: 768px) {
-  #main-bar i i {
+  #main-bar i {
     display: block;
   }
 }
@@ -10949,14 +10943,6 @@ hr {
 }
 #jumbotron img {
   width: 100%;
-}
-#jumbotron h1, #jumbotron .h1 {
-  font-size: 3rem;
-}
-@media (min-width: 1400px) {
-  #jumbotron h1, #jumbotron .h1 {
-    font-size: 4rem;
-  }
 }
 #jumbotron h5, #jumbotron .h5 {
   margin-top: 2vh;
