@@ -25,7 +25,8 @@
 
 @mixin dropdownButton {
   button {
-    width: 80%;
+    width: 23vh;
+
     border: none;
     border-radius: 3em;
     background-color: $sideColor;

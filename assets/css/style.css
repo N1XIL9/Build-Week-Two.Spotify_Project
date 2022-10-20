@@ -10797,6 +10797,10 @@ h5,
   border: 3px solid black;
 }
 
+#main-container {
+  height: 100vh;
+}
+
 .bi {
   cursor: pointer;
   font-size: 1.3rem;
@@ -10812,7 +10816,7 @@ h5,
 #rightside {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #rightside {
     display: block;
   }
@@ -10821,7 +10825,7 @@ h5,
 #leftSide {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #leftSide {
     display: block;
   }
@@ -10906,7 +10910,7 @@ hr {
   display: none;
 }
 .dropdown button {
-  width: 80%;
+  width: 23vh;
   border: none;
   border-radius: 3em;
   background-color: black;
@@ -10969,7 +10973,7 @@ hr {
   color: white;
   margin-right: 4vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #title-icons .bi {
     display: none;
   }
@@ -11004,7 +11008,7 @@ hr {
 .card-titles h5, .card-titles .h5 {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .card-titles h5, .card-titles .h5 {
     display: flex;
   }
@@ -11031,6 +11035,7 @@ hr {
 }
 #card-container .card-body {
   padding-top: 0;
+  text-align: center;
 }
 #card-container a {
   text-decoration: none;
@@ -11076,7 +11081,7 @@ svg {
   cursor: default;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #navbar-bottom {
     display: flex;
   }

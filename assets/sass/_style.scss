@@ -22,6 +22,10 @@ h5 {
   border: 3px solid black;
 }
 
+#main-container {
+  height: 100vh;
+}
+
 // ICONE - TABS - COMMENTI
 .bi {
   @include iconStyle;
@@ -37,14 +41,14 @@ h5 {
 
 #rightside {
   display: none;
-  @include md {
+  @include lg {
     display: block;
   }
 }
 
 #leftSide {
   display: none;
-  @include md {
+  @include lg {
     display: block;
   }
 }
@@ -168,7 +172,7 @@ hr {
     margin: {
       right: 4vh;
     }
-    @include md {
+    @include lg {
       display: none;
     }
   }
@@ -186,7 +190,7 @@ hr {
 .card-titles {
   h5 {
     display: none;
-    @include md {
+    @include lg {
       display: flex;
     }
   }
@@ -217,6 +221,7 @@ hr {
 
   .card-body {
     padding-top: 0;
+    text-align: center;
   }
   a {
     text-decoration: none;
@@ -263,7 +268,7 @@ svg {
   color: white;
   cursor: default;
   display: none;
-  @include md {
+  @include lg {
     display: flex;
   }
 }
