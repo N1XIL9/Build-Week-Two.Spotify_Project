@@ -6,6 +6,10 @@ window.onload = async () => {
     let albumArray = await res.json();
     console.log(albumArray);
 
+    function secToMin(n) {
+        return new Date(n * 1000).toISOString().substr(14, 5);
+    }
+
     document.querySelector("#album-cover").innerHTML = `
     <img src="${albumArray.cover}" alt="" id="cover-img" class="shadow" />
     <div id="album-info" class="ps-4 mt-5 text-dark">
@@ -13,9 +17,19 @@ window.onload = async () => {
         <h1 id="album-name-album">${albumArray.title}</h1>
         <p>
             <img src="https://img.freepik.com/premium-vector/hipster-frofile-hat-with-glasses_6229-762.jpg?w=2000" alt="" class="rounded img-fluid" width="20px" />
-            <span class="artist-name">${albumArray.artist.name} - ${albumArray.release_date.substring(0, 4)} - ${albumArray.nb_tracks}, ${(albumArray.duration / 60).toFixed(0)} min </span>
+            <span class="artist-name">${albumArray.artist.name} - ${albumArray.release_date.substring(0, 4)} - ${albumArray.nb_tracks}, ${secToMin(albumArray.duration)} min </span>
         </p>
     </div>`;
+
+    document.querySelector("#navbar-left").innerHTML = `
+    <img id="player-cover-b" src="${albumArray.cover_small}" alt="music" />
+                    <div class="play-back">
+                        <p id="title-song">${albumArray.title}</p>
+                        <p id="author">${albumArray.artist.name}</p>
+                    </div>
+                    <i class="bi bi-heart"></i>
+    
+    `;
 
     for (let t of albumArray.tracks.data) {
         let trackDiv = document.querySelector("#track-list-album");
@@ -26,13 +40,15 @@ window.onload = async () => {
                                     <h6>${albumArray.tracks.data.indexOf(t) + 1}</h6>
                                 </div>
                     
-                                <div class="col">
-                                    <div class="col">${t.title}</div>
-                                    <div class="col text-white-50">${t.artist.name}</div>
+                                <div class="col links-of-list">
+                                    <div class="col song-to-play"><a>${t.title}</a></div>
+                                    <div class="col song-to-play text-white-50"><a href=./artist.html?id=${t.artist.id}>${t.artist.name}</a></div>
                                 </div>
                             </div>
                             <div class="col-2 text-center text-white-50">${t.rank}</div>
-                            <div class="col-2 text-center text-white-50">${(t.duration / 60).toFixed(1)} min </div>
+                            <div class="col-2 text-center text-white-50">${secToMin(t.duration)} min </div>
                         </div>`;
     }
+
+    document.querySelector();
 };
