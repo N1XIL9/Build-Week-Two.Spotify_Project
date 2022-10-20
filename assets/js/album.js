@@ -11,17 +11,20 @@ window.onload = async () => {
     }
 
     document.querySelector("#album-cover").innerHTML = `
-    <img src="${albumArray.cover}" alt="" id="cover-img" class="shadow" />
-    <div id="album-info" class="ps-4 mt-5 text-dark">
-        <p>ALBUM</p>
-        <h1 id="album-name-album">${albumArray.title}</h1>
-        <p>
-            <img src="https://img.freepik.com/premium-vector/hipster-frofile-hat-with-glasses_6229-762.jpg?w=2000" alt="" class="rounded img-fluid" width="20px" />
-            <span class="artist-name"><a href=./artist.html?id=${albumArray.artist.id}>${albumArray.artist.name}</a> - ${albumArray.release_date.substring(0, 4)} - ${albumArray.nb_tracks}, ${secToMin(
+            
+            <img src="${albumArray.cover}" alt="" id="cover-img" class="shadow mt-4 mt-md-0" />
+           
+            <div id="album-info" class="ps-4 mt-5 text-dark">
+                <p class=" d-none d-sm-block">ALBUM</p>
+                <h1 id="album-name-album">${albumArray.title}</h1>
+                <p>
+                    <img src="https://img.freepik.com/premium-vector/hipster-frofile-hat-with-glasses_6229-762.jpg?w=2000" alt="" class="rounded img-fluid" width="20px" />
+                    <span class="artist-name">
+                    <a href=./artist.html?id=${albumArray.artist.id}>${albumArray.artist.name}</a> - ${albumArray.release_date.substring(0, 4)} - ${albumArray.nb_tracks}, ${secToMin(
         albumArray.duration
-    )} min </span>
-        </p>
-    </div>`;
+    )} min</span>
+                </p>
+            </div>`;
 
     document.querySelector("#navbar-left").innerHTML = `
     <img id="player-cover-b" src="${albumArray.cover_small}" alt="music" />
@@ -33,7 +36,7 @@ window.onload = async () => {
 
     for (let t of albumArray.tracks.data) {
         let trackDiv = document.querySelector("#track-list-album");
-        console.log(t);
+
         trackDiv.innerHTML += `
         <div class="title-head text-light row mx-2 mt-4 track-div-box">
                             <div class="col row justify-content-start ">
@@ -49,8 +52,6 @@ window.onload = async () => {
                             <div class="col-2 text-center text-white-50">${t.rank}</div>
                             <div class="col-2 text-center text-white-50">${secToMin(t.duration)} min </div>
                         </div>`;
-
-        console.log(t.title);
     }
 };
 

@@ -73,15 +73,18 @@
 
                 <!-- SECTION CENTER  -->
 
-                <div id="main-section" class="col data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 100vh; position:relative">
 
+
+                <div id="main-section" class="col data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: auto; position:relative">
+                
                 <div class="album-cover-box pt-2 px-2">
                     <div>
+                        <i class="bi bi-arrow-left-short text-light d-md-none"></i>
                         <!-- INIZIO BARRA MAIN -->
-                        <div id="main-bar" class="row d-flex justify-content-between">
+                        <div id="main-bar" class="row justify-content-between me-5">
                             <!-- ICONE FRECCE -->
-                            <div class="col-2 d-flex justify-content-evenly">
-                                <i class="bi bi-arrow-left-circle-fill"></i>
+                            <div class="col-2 d-flex flex-row">
+                                <i class="bi bi-arrow-left-circle-fill me-2"></i>
                                 <i class="bi bi-arrow-right-circle-fill"></i>
                             </div>
                             <!-- FINE ICONE FRECCE -->
@@ -110,7 +113,7 @@
                         <!-- INIZIO cover -->
 
                         <div class="row">
-                            <div id="album-cover" class="d-flex flex-column flex--md-row">
+                            <div id="album-cover" class="d-flex flex-column flex-md-row justify-content-center align-items-center p2-2">
                                 <!--  -->
                             </div>
                         </div>
@@ -119,23 +122,20 @@
 
                 <!-- player centrale -->
                 <div id="album-titles">
-                    <div id="center-player">
-                        <i class="center-album-icon bi bi-arrow-right-circle-fill text-success"></i>
-
+                    <div id="center-player" class="px-3">
+                        <i class="center-album-icon fa-solid fa-circle-play text-success float-sm-end "></i>  
+                        <i class="center-album-icon fa-solid fa-shuffle float-sm-end text-light d-none d-sm-block"></i>                    
                         <i class="center-album-icon bi bi-heart text-light"></i>
-
                         <i class="center-album-icon bi bi-arrow-down-circle text-light"></i>
-
                         <i class="center-album-icon bi bi-three-dots text-light"></i>
                     </div>
                     <div id="titles-box">
-                        <div class="title-head text-light row mx-2 mt-4">
-                            <div class="col text-white-50">#TITOLO</div>
-                            <div class="col-2 text-center text-white-50">RANK</div>
-
-                            <div class="col-2 text-center">
-                                <i class="bi bi-stopwatch text-white-50"></i>
-                            </div>
+                        <div class="title-head text-light row mx-2 mt-4 align-items-center ">
+                            <div class="col-1  text-white-50 ">#</div>
+                            <div class="col  text-white-50 ">TITOLO</div>
+                            <div class="col-3 text-center text-white-50 ">RANK</div>
+                            <i class="col-3 text-center bi bi-stopwatch text-white-50"></i>
+                           
                         </div>
                     </div>
                     <div class="row" id="track-list-album">
@@ -150,7 +150,7 @@
             <!-- SECTION RIGHT -->
             <div id="rightside" class="col-2 border border-dark pe-2">
                 <div class="row justify-content-between">
-                    <div class="col">
+                    <div class="col ">
                         <h6 class="text-white mt-2">Attività amici</h6>
                     </div>
 
