@@ -11137,7 +11137,6 @@ hr {
 }
 
 #list-menu-bottom {
-  position: sticky;
   background-color: rgba(0, 0, 0, 0);
   height: 6vh;
   margin-top: 2vh;
