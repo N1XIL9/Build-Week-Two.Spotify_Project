@@ -1,265 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/228474511d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Spotify</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <!-- START SECTION SIDEBAR LEFT  -->
-            <div class="row">
-                <div id="leftSide" class="col-2 border border-dark">
-                    <!-- ICONE - TABS - COMMENTI  -->
-                    <div id="simple-list-example" class="iconTabsComm d-flex flex-column simple-list-example-scrollspy">
-                        <i class="bi bi-three-dots"></i>
-                        <a id="text-dec" href="./index.html">
-                            <i class="bi bi-house-door-fill"><h6>Home</h6></i>
-                        </a>
-                         <i class="bi bi-search"><h6>Cerca</h6></i>  
-                         <!-- <i class="bi bi-search"> <input type="text" placeholder="Cerca" ></i>   -->
-                        <i class="bi bi-files"><h6>La tua libreria</h6></i>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/228474511d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- START SECTION SIDEBAR LEFT  -->
+      <div class="row">
+        <div id="leftSide" class="col-2 border border-dark">
+          <!-- ICONE - TABS - COMMENTI  -->
+          <div
+            id="simple-list-example"
+            class="iconTabsComm d-flex flex-column simple-list-example-scrollspy"
+          >
+            <i class="bi bi-three-dots"></i>
+            <a id="text-dec" href="./index.html">
+              <i class="bi bi-house-door-fill"><h6>Home</h6></i>
+            </a>
+            <i class="bi bi-search"><h6>Cerca</h6></i>
+            <!-- <i class="bi bi-search"> <input type="text" placeholder="Cerca" ></i>   -->
+            <i class="bi bi-files"><h6>La tua libreria</h6></i>
+          </div>
 
-                    <div class="iconTabsComm d-flex flex-column">
-                        <i class="bi bi-plus-square-fill"><h6>Crea playlist</h6></i>
-                        <i class="bi bi-chat-right-heart-fill"><h6>Brani che ti piacciono</h6></i>
-                        <i class="bi bi-bookmark-plus-fill"><h6>I tuoi episodi</h6></i>
-                    </div>
-                    <hr />
+          <div class="iconTabsComm d-flex flex-column">
+            <i class="bi bi-plus-square-fill"><h6>Crea playlist</h6></i>
+            <i class="bi bi-chat-right-heart-fill"
+              ><h6>Brani che ti piacciono</h6></i
+            >
+            <i class="bi bi-bookmark-plus-fill"><h6>I tuoi episodi</h6></i>
+          </div>
+          <hr />
 
-                    <!-- COMMENTI  -->
-                    <div id="comment-scroll" data-spy="scroll" data-target="#scrollspy" data-offset="0" style=" position: relative; background-color: black">
-                        <p>early stage emily syndrome (sett-ott 2022)</p>
-                        <p>Lidia risparmiaci🙏</p>
-                        <p>Eric uno di noi 🙌</p>
-                        <p>Per me è la cipolla 🧅</p>
-                        <p>main character energy (mag-giu 2022)</p>
-                        <p>ammazzo tutti🔪⚙️</p>
-                        <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
-                        <p>An Fmilv Winchester kind of mond🔪</p>
-                        <p>Non ce la posso fare 😞</p>
-                        <p>Ce la posso fare 😃</p>
-                        <p>Bipolar man 🥸</p>
-                        <p>An Fmilv Winchester kind of mond🔪</p>
-                        <p>main character energy (mag-giu 2022)</p>
-                        <p>Frah Quintale Mix</p>
-                        <p>Francescp Guccini Mix</p>
-                        <p>Fabrizio De Andrè</p>
-                        <p>Non so cosa scrivere</p>
-                        <p>Boh vediamo cosi</p>
-                        <p>Sà Sà Prova prova 🎙</p>
-                        <p>asdasadsdasdasd</p>
-                        <p>MA come si fa sto scrolling</p>
-                        <p>early stage emily syndrome (sett-ott 2022)</p>
-                        <p>Lidia risparmiaci🙏</p>
-                        <p>Eric uno di noi 🙌</p>
-                        <p>Per me è la cipolla 🧅</p>
-                        <p>main character energy (mag-giu 2022)</p>
-                        <p>ammazzo tutti🔪⚙️</p>
-                        <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
-                        <p>An Fmilv Winchester kind of mond🔪</p>
-                    </div>
+          <!-- COMMENTI  -->
+          <div
+            id="comment-scroll"
+            data-spy="scroll"
+            data-target="#scrollspy"
+            data-offset="0"
+            style="position: relative; background-color: black"
+          >
+            <p>early stage emily syndrome (sett-ott 2022)</p>
+            <p>Lidia risparmiaci🙏</p>
+            <p>Eric uno di noi 🙌</p>
+            <p>Per me è la cipolla 🧅</p>
+            <p>main character energy (mag-giu 2022)</p>
+            <p>ammazzo tutti🔪⚙️</p>
+            <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
+            <p>An Fmilv Winchester kind of mond🔪</p>
+            <p>Non ce la posso fare 😞</p>
+            <p>Ce la posso fare 😃</p>
+            <p>Bipolar man 🥸</p>
+            <p>An Fmilv Winchester kind of mond🔪</p>
+            <p>main character energy (mag-giu 2022)</p>
+            <p>Frah Quintale Mix</p>
+            <p>Francescp Guccini Mix</p>
+            <p>Fabrizio De Andrè</p>
+            <p>Non so cosa scrivere</p>
+            <p>Boh vediamo cosi</p>
+            <p>Sà Sà Prova prova 🎙</p>
+            <p>asdasadsdasdasd</p>
+            <p>MA come si fa sto scrolling</p>
+            <p>early stage emily syndrome (sett-ott 2022)</p>
+            <p>Lidia risparmiaci🙏</p>
+            <p>Eric uno di noi 🙌</p>
+            <p>Per me è la cipolla 🧅</p>
+            <p>main character energy (mag-giu 2022)</p>
+            <p>ammazzo tutti🔪⚙️</p>
+            <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
+            <p>An Fmilv Winchester kind of mond🔪</p>
+          </div>
+        </div>
+        <!-- END SECTION SIDEBAR LEFT  -->
+
+        <!-- SECTION CENTER  -->
+
+        <div id="main-section" class="col">
+          <div
+            class="container"
+            data-spy="scroll"
+            data-target="#scrollspy"
+            data-offset="0"
+            style="overflow-y: scroll; height: 100vh; position: relative"
+          >
+            <!-- INIZIO BARRA MAIN -->
+            <div id="main-bar" class="row d-flex justify-content-between">
+              <!-- ICONE FRECCE -->
+              <div class="col-2">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </div>
+              <!-- FINE ICONE FRECCE -->
+
+              <!-- BOTTONE DROPDOWN -->
+              <div class="col-2">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD"
+                      alt=""
+                    />
+
+                    Giuseppe
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Account</a></li>
+                    <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                    <li><a class="dropdown-item" href="#">Esci</a></li>
+                  </ul>
                 </div>
-                <!-- END SECTION SIDEBAR LEFT  -->
-
-                <!-- SECTION CENTER  -->
-
-                <div id="main-section" class="col">
-                    <div class="container" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 100%; position: relative">
-                        <!-- INIZIO BARRA MAIN -->
-                        <div id="main-bar" class="row d-flex justify-content-between">
-                            <!-- ICONE FRECCE -->
-                            <div class="col-2">
-                                <i class="bi bi-arrow-left-circle-fill"></i>
-                                <i class="bi bi-arrow-right-circle-fill"></i>
-                            </div>
-                            <!-- FINE ICONE FRECCE -->
-
-                            <!-- BOTTONE DROPDOWN -->
-                            <div class="col-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img
-                                            src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD"
-                                            alt=""
-                                        />
-
-                                        Giuseppe
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Account</a></li>
-                                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                                        <li><a class="dropdown-item" href="#">Esci</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- FINE BOTTONE DROPDOWN -->
-                        </div>
-                        <!-- FINE BARRA MAIN -->
-
-                        <!-- SECTION ARTIST  -->
-                        <section id="container-artist">
-                            <!-- inserire immagine bg in js-->
-                            <h6><img class="badgeSpot" src="./assets/img/Legitly-Verified-Blue-Badge-top-page.png" alt="badge" /> Artista verificato</h6>
-                            <h1 id="titleArt"></h1>
-                            <h6>9.360 ascoltatori mensili</h6>
-                        </section>
-
-                        <section id="container-artist-btn">
-                            <button class="play-byn-art">►</button>
-                            <button class="follow-btn"><h5>FOLLOWING</h5></button>
-                            <i class="bi bi-three-dots"></i>
-                        </section>
-
-                        <section class="container-artist-title">
-                            <div class="row">
-                                <div class="col-8">
-                                    <h5>Popolari</h5>
-                                </div>
-                                
-                                <div class="col-4">
-                                    <h5>Brani che ti piacciono</h5>
-                                    <!--* START PREFERITE TRACKS  -->
-            
-                                    
-                                    <!--! END PREFERITE TRACKS  -->
-                                </div>
-
-                            </div>
-                            <div class="row">
-
-                                    
-                                <div id="contLCR" class="col-8 ">
-                                    
-                                    <!--* inserire js -->
-                                    
-                                </div>
-                                <div class="col-4">
-                                    <div class="cont-stats">
-                                        <div><img src="https://picsum.photos/60/60" class="img-preferite" /></div>
-                                        <div>
-                                            <h6>Hai messo Mi piace a 11 Brani</h6>
-                                            <div><p id="albumTitle">di Titolo artista</p></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <!-- SECTION RIGHT -->
-                <div id="rightside" class="d-none d-md-block col-2 border border-dark pe-2">
-                    <div class="row justify-content-between">
-                        <div class="col">
-                            <h6 class="text-white mt-2">Attività amici</h6>
-                        </div>
-
-                        <div class="col d-flex justify-content-end">
-                            <i class="bi bi-person-plus"></i>
-                            <i class="bi bi-x-lg"></i>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="row friends mt-4">
-                            <div class="col-3">
-                                <div class="friend friend-1"></div>
-                            </div>
-                            <div class="col">
-                                <h6>Michael Jackson</h6>
-                                <p class="pt-0">Michael sta ascoltando Zombie</p>
-                            </div>
-                            <div class="col-2 me-1">
-                                <p>4 ore</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row friends">
-                        <div class="col-3">
-                            <div class="friend friend-1"></div>
-                        </div>
-                        <div class="col">
-                            <h6>Amy winehouse</h6>
-                            <p class="pt-0">amy ha condiviso un post di Maneskin</p>
-                        </div>
-                        <div class="col-2 me-1">
-                            <p>4 ore</p>
-                        </div>
-                    </div>
-
-                    <div class="row friends">
-                        <div class="col-3">
-                            <div class="friend friend-3"></div>
-                        </div>
-                        <div class="col">
-                            <h6>The Cranberries</h6>
-                            <p class="pt-0">ha publicato un novo canzone!</p>
-                        </div>
-                        <div class="col-2 me-1">
-                            <p>4 ore</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- START SECTION BOTTOM PLAYER  -->
+              </div>
+              <!-- FINE BOTTONE DROPDOWN -->
             </div>
+            <!-- FINE BARRA MAIN -->
+
+            <!-- SECTION ARTIST  -->
+            <section id="container-artist">
+              <!-- inserire immagine bg in js-->
+              <h6>
+                <img
+                  class="badgeSpot"
+                  src="./assets/img/Legitly-Verified-Blue-Badge-top-page.png"
+                  alt="badge"
+                />
+                Artista verificato
+              </h6>
+              <h1 id="titleArt"></h1>
+              <h6>9.360 ascoltatori mensili</h6>
+            </section>
+
+            <section id="container-artist-btn">
+              <button class="play-byn-art">►</button>
+              <button class="follow-btn"><h5>FOLLOWING</h5></button>
+              <i class="bi bi-three-dots"></i>
+            </section>
+
+            <section class="container-artist-title">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Popolari</h5>
+                </div>
+
+                <div class="col-4">
+                  <h5>Brani che ti piacciono</h5>
+                  <!--* START PREFERITE TRACKS  -->
+
+                  <!--! END PREFERITE TRACKS  -->
+                </div>
+              </div>
+              <div class="row">
+                <div id="contLCR" class="col-8">
+                  <!--* inserire js -->
+                </div>
+                <div class="col-4">
+                  <div class="cont-stats">
+                    <div>
+                      <img
+                        src="https://picsum.photos/60/60"
+                        class="img-preferite"
+                      />
+                    </div>
+                    <div>
+                      <h6>Hai messo Mi piace a 11 Brani</h6>
+                      <div><p id="albumTitle">di Titolo artista</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
 
-        <!-- END SECTION BOTTOM PLAYER -->
-        <section id="navbar-bottom">
-            <div id="navbar-left">
-                <img id="img-btn-player" src="https://picsum.photos/60/60" alt="music" />
-                <div class="play-back">
-                    <p id="title-song">La Passeggiata</p>
-                    <p id="author">Nicola Lerra</p>
-                </div>
-                <i class="bi bi-heart"></i>
+        <!-- SECTION RIGHT -->
+        <div
+          id="rightside"
+          class="d-none d-md-block col-2 border border-dark pe-2"
+        >
+          <div class="row justify-content-between">
+            <div class="col">
+              <h6 class="text-white mt-2">Attività amici</h6>
             </div>
-            <div id="navbar-center">
-                <div class="track-buttons">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-solid fa-circle-pause" id="pause"></i>
-                    <i class="fa-solid fa-circle-play" id="play"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="bi bi-repeat"></i>
-                </div>
-                <div class="trackbar">
-                    <p id="current-seconds">0.0</p>
-                    <div id="track-seconds"></div>
-                    <div class="track-default"></div>
-                    <p id="total-seconds">2.56</p>
-                </div>
-            </div>
-            <div id="navbar-right">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-computer"></i>
-                <i class="fa-solid fa-volume-off"></i>
-                <div class="volume">
-                    <div id="volume-set" class="volume-set"></div>
-                    <div class="volume-default"></div>
-                </div>
-            </div>
-        </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous">
-        </script>
-        <script src="./assets/js/artist.js"></script>
-    </body>
+            <div class="col d-flex justify-content-end">
+              <i class="bi bi-person-plus"></i>
+              <i class="bi bi-x-lg"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="row friends mt-4">
+              <div class="col-3">
+                <div class="friend friend-1"></div>
+              </div>
+              <div class="col">
+                <h6>Michael Jackson</h6>
+                <p class="pt-0">Michael sta ascoltando Zombie</p>
+              </div>
+              <div class="col-2 me-1">
+                <p>4 ore</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row friends">
+            <div class="col-3">
+              <div class="friend friend-1"></div>
+            </div>
+            <div class="col">
+              <h6>Amy winehouse</h6>
+              <p class="pt-0">amy ha condiviso un post di Maneskin</p>
+            </div>
+            <div class="col-2 me-1">
+              <p>4 ore</p>
+            </div>
+          </div>
+
+          <div class="row friends">
+            <div class="col-3">
+              <div class="friend friend-3"></div>
+            </div>
+            <div class="col">
+              <h6>The Cranberries</h6>
+              <p class="pt-0">ha publicato un novo canzone!</p>
+            </div>
+            <div class="col-2 me-1">
+              <p>4 ore</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- START SECTION BOTTOM PLAYER  -->
+      </div>
+    </div>
+
+    <!-- END SECTION BOTTOM PLAYER -->
+    <section id="navbar-bottom">
+      <div id="navbar-left">
+        <img
+          id="img-btn-player"
+          src="https://picsum.photos/60/60"
+          alt="music"
+        />
+        <div class="play-back">
+          <p id="title-song">La Passeggiata</p>
+          <p id="author">Nicola Lerra</p>
+        </div>
+        <i class="bi bi-heart"></i>
+      </div>
+      <div id="navbar-center">
+        <div class="track-buttons">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-circle-pause" id="pause"></i>
+          <i class="fa-solid fa-circle-play" id="play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="bi bi-repeat"></i>
+        </div>
+        <div class="trackbar">
+          <p id="current-seconds">0.0</p>
+          <div id="track-seconds"></div>
+          <div class="track-default"></div>
+          <p id="total-seconds">2.56</p>
+        </div>
+      </div>
+      <div id="navbar-right">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-solid fa-volume-off"></i>
+        <div class="volume">
+          <div id="volume-set" class="volume-set"></div>
+          <div class="volume-default"></div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/artist.js"></script>
+  </body>
 </html>
