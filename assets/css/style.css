@@ -11278,3 +11278,13 @@ svg {
   background-color: rgba(255, 255, 255, 0.093);
   transition: 0.2s ease-in-out;
 }
+
+.song-to-play {
+  color: white;
+}
+.song-to-play a {
+  text-decoration: none;
+}
+.song-to-play a {
+  color: #b2afac;
+}
