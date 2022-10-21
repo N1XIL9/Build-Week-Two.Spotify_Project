@@ -50,7 +50,7 @@ async function chargeApi() {
   titleArti.innerText = `${responseText.name}`;
 
   let bflat = new Audio();
-  bflat.src = `${albumTot[i].preview}`;
+  bflat.src = "../assets/sound/A way of life.mp3";
   function PlaySound() {
     bflat.play();
   }
