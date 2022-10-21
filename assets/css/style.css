@@ -10799,7 +10799,7 @@ h5,
 }
 
 #main-container {
-  height: 100vh;
+  height: 100%;
   background: rgb(65, 64, 63);
   background: linear-gradient(180deg, rgb(46, 45, 44) 0%, rgb(16, 15, 15) 46%);
 }
@@ -11139,8 +11139,6 @@ hr {
 }
 
 #list-menu-bottom {
-  position: sticky;
-  bottom: 0;
   background-color: rgba(0, 0, 0, 0);
   height: 6vh;
   margin-top: 2vh;
@@ -11161,7 +11159,7 @@ hr {
 }
 @media (min-width: 992px) {
   #list-menu-bottom {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -11469,7 +11467,10 @@ svg {
 
 .track-div-box:hover {
   background-color: rgba(255, 255, 255, 0.093);
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+.track-div-box:hover * {
+  color: white;
 }
 
 .song-to-play a,
