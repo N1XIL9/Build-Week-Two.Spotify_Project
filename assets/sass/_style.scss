@@ -16,7 +16,7 @@ h5 {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container-fluid {
@@ -109,39 +109,39 @@ hr {
 
 // SECTION CENTER
 .searchbar-container {
-    margin-top: 4vh;
+  margin-top: 4vh;
 }
 #searchbar {
-    width: 95%;
-    height: 7vh;
-    border: 1px solid black;
-    border-radius: 1em;
-    background-color: #1b1b1b;
-    margin: 2vh auto;
-    color: grey;
+  width: 95%;
+  height: 7vh;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: #1b1b1b;
+  margin: 2vh auto;
+  color: grey;
 }
 
 #searchbar::placeholder {
-    font-size: 1.5em;
-    padding-left: 3vh;
+  font-size: 1.5em;
+  padding-left: 3vh;
 }
 
 #search-cards-container {
-    margin-top: 4vh;
+  margin-top: 4vh;
 }
 
 .search-card {
-    background-color: red;
-    width: 25vh;
-    height: 23vh;
-    margin-top: 4vh;
-    border-radius: 1em;
-    h5 {
-        color: white;
-        font-weight: 500;
-        margin-top: 3vh;
-        font-size: 1.5em;
-    }
+  background-color: red;
+  width: 25vh;
+  height: 23vh;
+  margin-top: 4vh;
+  border-radius: 1em;
+  h5 {
+    color: white;
+    font-weight: 500;
+    margin-top: 3vh;
+    font-size: 1.5em;
+  }
 }
 
 #main-section {
@@ -461,30 +461,29 @@ svg {
     border-radius: 2em;
   }
 
-    .follow-btn {
-        margin-left: 25px;
-        background-color: #212121;
-        border: 1px solid white;
-        height: 4.5vh;
-        padding: 5px;
-        border-radius: 5px;
+  .follow-btn {
+    margin-left: 25px;
+    background-color: #212121;
+    border: 1px solid white;
+    height: 4.5vh;
+    padding: 5px;
+    border-radius: 5px;
 
-        h5 {
-            font-size: 1rem;
-        }
-    }
-    .bi {
-        margin-left: 15px;
-        color: grey;
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
+    h5 {
+      font-size: 1rem;
     }
   }
   .bi {
     margin-left: 15px;
     color: grey;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
   }
+}
+.bi {
+  margin-left: 15px;
+  color: grey;
 }
 
 .container-artist-title {
@@ -567,12 +566,12 @@ svg {
   align-items: center;
   margin-top: 20px;
 
-    .img-preferite {
-        width: 60px;
-        height: 60px;
-        background-size: cover;
-        border-radius: 50%;
-    }
+  .img-preferite {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+  }
 
   h6 {
     color: white;
@@ -621,11 +620,11 @@ svg {
 }
 
 .track-div-box:hover {
-    background-color: rgba(255, 255, 255, 0.093);
-    transition: 0.15s ease-in-out;
-    * {
-        color: white;
-    }
+  background-color: rgba(255, 255, 255, 0.093);
+  transition: 0.15s ease-in-out;
+  * {
+    color: white;
+  }
 }
 
 .song-to-play,
