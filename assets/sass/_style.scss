@@ -1,641 +1,637 @@
 body {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
-  font-size: 4rem;
-  color: $titleColor;
-  font-weight: bold;
+    font-size: 4rem;
+    color: $titleColor;
+    font-weight: bold;
 }
 
 h2,
 h3,
 h5 {
-  color: $titleColor;
+    color: $titleColor;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .container-fluid {
-  width: 100%;
-  height: 101%;
-  border: 3px solid black;
-  @include bgColorGradient;
+    width: 100%;
+    height: 101%;
+    border: 3px solid black;
+    @include bgColorGradient;
 }
 
 #main-section {
-  @media (max-width: 997px) {
-    width: 100%;
-  }
+    @media (max-width: 997px) {
+        width: 100%;
+    }
 }
 
 #main-container {
-  height: 100vh;
-  @include bgColorGradient;
+    height: 100vh;
+    @include bgColorGradient;
 }
 
 // ICONE - TABS - COMMENTI
 .bi {
-  @include iconStyle;
+    @include iconStyle;
 }
 
 // SECTION LEFT
 
 #leftSide,
 #rightside {
-  background-color: $sideColor;
-  color: $textColor;
+    background-color: $sideColor;
+    color: $textColor;
 }
 
 #rightside {
-  display: none;
-  @include lg {
-    display: block;
-  }
+    display: none;
+    @include lg {
+        display: block;
+    }
 }
 
 #leftSide {
-  display: none;
-  @include lg {
-    display: block;
-  }
+    display: none;
+    @include lg {
+        display: block;
+    }
 }
 
 .iconTabsComm {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 
-  h6 {
-    @include textStyle;
-  }
+    h6 {
+        @include textStyle;
+    }
 
-  h6:hover {
-    color: white;
-  }
+    h6:hover {
+        color: white;
+    }
 
-  input {
-    cursor: pointer;
-    margin-left: 10px;
-    background-color: black;
-    border: none;
-    font-size: 0.9rem;
-    background-color: $sideColor;
-    color: $textColor;
-  }
+    input {
+        cursor: pointer;
+        margin-left: 10px;
+        background-color: black;
+        border: none;
+        font-size: 0.9rem;
+        background-color: $sideColor;
+        color: $textColor;
+    }
 
-  i {
-    margin-left: 5px;
-    margin-bottom: 5px;
-  }
+    i {
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
 
-  #text-dec {
-    text-decoration: none;
-  }
+    #text-dec {
+        text-decoration: none;
+    }
 }
 
 a {
-  @include textDecoration;
+    @include textDecoration;
 }
 
 p {
-  font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 hr {
-  columns: $textColor;
+    columns: $textColor;
 }
 
 // SECTION CENTER
 .searchbar-container {
-  margin-top: 4vh;
+    margin-top: 4vh;
 }
 #searchbar {
-  width: 95%;
-  height: 7vh;
-  border: 1px solid black;
-  border-radius: 1em;
-  background-color: #1b1b1b;
-  margin: 2vh auto;
-  color: grey;
+    width: 95%;
+    height: 7vh;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: #1b1b1b;
+    margin: 2vh auto;
+    color: grey;
 }
 
 #searchbar::placeholder {
-  font-size: 1.5em;
-  padding-left: 3vh;
+    font-size: 1.5em;
+    padding-left: 3vh;
 }
 
 #search-cards-container {
-  margin-top: 4vh;
+    margin-top: 4vh;
 }
 
 .search-card {
-  background-color: red;
-  width: 25vh;
-  height: 23vh;
-  margin-top: 4vh;
-  border-radius: 1em;
-  h5 {
-    color: white;
-    font-weight: 500;
-    margin-top: 3vh;
-    font-size: 1.5em;
-  }
+    background-color: red;
+    width: 25vh;
+    height: 23vh;
+    margin-top: 4vh;
+    border-radius: 1em;
+    h5 {
+        color: white;
+        font-weight: 500;
+        margin-top: 3vh;
+        font-size: 1.5em;
+    }
 }
 
 #main-section {
-  //   @include bgColorGradient;
+    //   @include bgColorGradient;
 
-  @include xs {
-    background: black;
-  }
-  .bi {
-    @include mainIconStyle;
-    font-size: 2rem;
-  }
-  .container {
-    margin-top: 1vh;
-  }
+    @include xs {
+        background: black;
+    }
+    .bi {
+        @include mainIconStyle;
+        font-size: 2rem;
+    }
+    .container {
+        margin-top: 1vh;
+    }
 }
 
 #main-bar {
-  @include mainBar;
+    @include mainBar;
 }
 .dropdown {
-  @include dropdownButton;
-  font-size: 0.7rem;
-  display: none;
-  @include md {
-    display: block;
-  }
+    @include dropdownButton;
+    font-size: 0.7rem;
+    display: none;
+    @include md {
+        display: block;
+    }
 }
 
 #jumbotron {
-  @include jumbotron;
-  @include md {
-    display: flex;
-    align-items: center;
-  }
+    @include jumbotron;
+    @include md {
+        display: flex;
+        align-items: center;
+    }
 }
 
 #title-icons {
-  .bi {
-    color: white;
-    margin: {
-      right: 1vh;
+    .bi {
+        color: white;
+        margin: {
+            right: 1vh;
+        }
+        @include md {
+            display: none;
+        }
     }
-    @include md {
-      display: none;
-    }
-  }
 }
 
 #playlist {
-  .playlist-box {
-    @include playlistBoxes;
-    @media screen and (max-width: 374px) {
-      width: 96%;
+    .playlist-box {
+        @include playlistBoxes;
+        @media screen and (max-width: 374px) {
+            width: 96%;
+        }
+        @include lg {
+            width: 30%;
+        }
+        @include xs {
+            background-color: transparent;
+        }
     }
-    @include lg {
-      width: 30%;
-    }
-    @include xs {
-      background-color: transparent;
-    }
-  }
 }
 
 .card-titles {
-  h5 {
-    display: none;
-    @include lg {
-      display: flex;
+    h5 {
+        display: none;
+        @include lg {
+            display: flex;
+        }
     }
-  }
-  margin: {
-    top: 5vh;
-    bottom: 2vh;
-  }
+    margin: {
+        top: 5vh;
+        bottom: 2vh;
+    }
 }
 
 #card-container {
-  @include albums;
+    @include albums;
 }
 
 // SECTION RIGHT
 
 .friend {
-  background-size: cover;
-  border-radius: 50%;
+    background-size: cover;
+    border-radius: 50%;
 
-  @include lg {
-    width: 40px;
-    height: 40px;
-  }
-  @include xl {
-    width: 50px;
-    height: 50px;
-  }
+    @include lg {
+        width: 40px;
+        height: 40px;
+    }
+    @include xl {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 #ore {
-  @include lg {
-    display: none;
-  }
-  @include xl {
-    display: block;
-  }
+    @include lg {
+        display: none;
+    }
+    @include xl {
+        display: block;
+    }
 }
 
 .friend-1 {
-  background-image: url(https://s2.r29static.com/bin/entry/c3f/x,80/2208446/image.jpg);
+    background-image: url(https://s2.r29static.com/bin/entry/c3f/x,80/2208446/image.jpg);
 }
 .friend-2 {
-  background-image: url(https://d12uefesvffx6j.cloudfront.net/19c5f765-0557-4426-9640-815710205fb3-6-luglio-battiferro-ok.jpg/658e92357ddaf83a37526e47323880e7e339b4c0.jpg);
+    background-image: url(https://d12uefesvffx6j.cloudfront.net/19c5f765-0557-4426-9640-815710205fb3-6-luglio-battiferro-ok.jpg/658e92357ddaf83a37526e47323880e7e339b4c0.jpg);
 }
 .friend-3 {
-  background-image: url(https://www.tonica.la/__export/1599499388876/sites/debate/img/2020/09/07/dolores_oxriordan-the_cranberries-49_aniversario.jpg_423682103.jpg);
+    background-image: url(https://www.tonica.la/__export/1599499388876/sites/debate/img/2020/09/07/dolores_oxriordan-the_cranberries-49_aniversario.jpg_423682103.jpg);
 }
 
 // SECTION MINIPLAYER
 #mini-player {
-  @include lg {
-    display: none;
-  }
-  text-align: center;
-  position: sticky;
-  width: 100%;
-  border-radius: 5px;
-  background-color: #282828;
-  margin: 0 auto;
-  width: 95%;
-  height: 6vh;
-  h5 {
-    width: 89%;
-    font-size: 1rem;
-  }
+    @include lg {
+        display: none;
+    }
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #282828;
+    margin: 0 auto;
+    width: 95%;
+    height: 6vh;
+    h5 {
+        width: 89%;
+        font-size: 1rem;
+    }
 }
 
 #list-menu-bottom {
-  background-color: rgba(0, 0, 0, 0);
-  height: 6vh;
-  margin-top: 2vh;
-  i {
-    margin-top: 1vh;
-  }
+    background-color: rgba(0, 0, 0, 0);
+    height: 6vh;
+    margin-top: 2vh;
+    i {
+        margin-top: 1vh;
+    }
 
-  #text-dec,
-  h6,
-  .bi,
-  .bi h6 {
-    text-align: center;
-    margin: 0;
-  }
-  @include lg {
-    display: none !important;
-  }
+    #text-dec,
+    h6,
+    .bi,
+    .bi h6 {
+        text-align: center;
+        margin: 0;
+    }
+    @include lg {
+        display: none !important;
+    }
 }
 
 // SECTION BOTTOM PLAYER
 svg {
-  margin-right: 17px;
+    margin-right: 17px;
 }
 
 #navbar-bottom {
-  border-top: 1px solid gray;
-  position: fixed;
-  bottom: 0;
-  height: 90px;
-  background-color: #212121;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  cursor: default;
-  display: none;
-  @include lg {
+    border-top: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+    background-color: #212121;
+    width: 100%;
     display: flex;
-  }
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: default;
+    display: none;
+    @include lg {
+        display: flex;
+    }
 }
 
 #navbar-bottom #navbar-left {
-  width: 33vw;
-  margin: 10px;
-  display: flex;
-  align-items: center;
+    width: 33vw;
+    margin: 10px;
+    display: flex;
+    align-items: center;
 }
 #navbar-bottom #navbar-left .play-back {
-  margin: 10px;
-  padding: 0;
-  font-size: 14px;
+    margin: 10px;
+    padding: 0;
+    font-size: 14px;
 }
 #navbar-bottom #navbar-left .play-back #title-song:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 #navbar-bottom #navbar-left .play-back #author {
-  color: gray;
-  font-size: 12px;
+    color: gray;
+    font-size: 12px;
 }
 #navbar-bottom #navbar-center {
-  width: 33vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    width: 33vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #navbar-bottom #navbar-center .track-buttons {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  color: rgb(208, 208, 208);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(208, 208, 208);
 }
 #navbar-bottom #navbar-center .track-buttons i {
-  padding-inline: 10px;
+    padding-inline: 10px;
 }
 #navbar-bottom #navbar-center .track-buttons i:hover {
-  color: white;
+    color: white;
 }
 #navbar-bottom #navbar-center .track-buttons .fa-circle-play {
-  color: white;
-  font-size: 35px;
+    color: white;
+    font-size: 35px;
 }
 #navbar-bottom #navbar-center .track-buttons .fa-circle-pause {
-  font-size: 35px;
-  display: none;
+    font-size: 35px;
+    display: none;
 }
 #navbar-bottom #navbar-center .trackbar {
-  display: flex;
-  align-items: center;
-  font-size: 10px;
-  color: rgb(204, 204, 204);
-  width: 36vw;
-  p {
-    margin: 0;
-  }
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: rgb(204, 204, 204);
+    width: 36vw;
+    p {
+        margin: 0;
+    }
 }
 #navbar-bottom #navbar-center .trackbar .track-default {
-  width: 100%;
-  height: 4px;
-  background-color: gray;
-  border-radius: 50px;
-  margin: 8px;
+    width: 100%;
+    height: 4px;
+    background-color: gray;
+    border-radius: 50px;
+    margin: 8px;
 }
 #navbar-bottom #navbar-center .trackbar #track-seconds {
-  position: relative;
-  left: 10px;
-  width: 0%;
-  height: 4px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50px;
+    position: relative;
+    left: 10px;
+    width: 0%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
 }
 #navbar-bottom #navbar-center .trackbar:hover #track-seconds {
-  background-color: #1ed760;
+    background-color: #1ed760;
 }
 #navbar-bottom #navbar-right {
-  width: 33vw;
-  margin: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  color: gray;
+    width: 33vw;
+    margin: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: gray;
 }
 #navbar-bottom #navbar-right i {
-  padding-right: 20px;
+    padding-right: 20px;
 }
 #navbar-bottom #navbar-right i:hover {
-  color: white;
+    color: white;
 }
 #navbar-bottom #navbar-right .volume .volume-default {
-  width: 80px;
-  height: 4px;
-  background-color: gray;
-  border-radius: 50px;
+    width: 80px;
+    height: 4px;
+    background-color: gray;
+    border-radius: 50px;
 }
 #navbar-bottom #navbar-right .volume #volume-set {
-  position: relative;
-  top: 4px;
-  width: 20px;
-  height: 4px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50px;
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
 }
 #navbar-bottom #navbar-right .volume:hover #volume-set {
-  background-color: #1ed760;
+    background-color: #1ed760;
 }
 
 // SECTION ARTIST
 
 #container-artist {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30vh;
 
-  h6 {
-    color: white;
-    margin-bottom: 0;
-  }
+    h6 {
+        color: white;
+        margin-bottom: 0;
+    }
 
-  .badgeSpot {
-    width: 30px;
-  }
+    .badgeSpot {
+        width: 30px;
+    }
 }
 
 // CONTAINER ARTIST BtN
 #container-artist-btn {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  .play-byn-art {
-    text-align: center;
-    font-size: 1.5rem;
-    width: 6vh;
-    height: 6vh;
-    background-color: #1ed760;
-    border-radius: 2em;
-  }
-
-  .follow-btn {
-    margin-left: 25px;
-    background-color: #212121;
-    border: 1px solid white;
-    height: 4.5vh;
-    padding: 5px;
-    border-radius: 5px;
-
-    h5 {
-      font-size: 1rem;
-    }
-  }
-  .bi {
-    margin-left: 15px;
-    color: grey;
     display: flex;
     align-items: center;
     margin-top: 20px;
-  }
+    .play-byn-art {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 6vh;
+        height: 6vh;
+        background-color: #1ed760;
+        border-radius: 2em;
+    }
+
+    .follow-btn {
+        margin-left: 25px;
+        background-color: #212121;
+        border: 1px solid white;
+        height: 4.5vh;
+        padding: 5px;
+        border-radius: 5px;
+
+        h5 {
+            font-size: 1rem;
+        }
+    }
+    .bi {
+        margin-left: 15px;
+        color: grey;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
 }
 .bi {
-  margin-left: 15px;
-  color: grey;
+    margin-left: 15px;
+    color: grey;
 }
 
 .container-artist-title {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 // CONTAINER ARTIST COVER AND StATS
 
 #contLCR {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-
-  .leftTitle {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 15px;
-    margin-top: 15px;
 
-    #numberTrack {
-      margin-right: 10px;
-      color: grey;
+    .leftTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+
+        #numberTrack {
+            margin-right: 10px;
+            color: grey;
+        }
+
+        .card-img-top {
+            margin-right: 15px;
+            width: 45px;
+        }
+
+        #albumTitle {
+            color: white;
+        }
+
+        .card-img-top {
+            width: 45px;
+        }
+
+        #albumTitle {
+            color: white;
+        }
     }
 
-    .card-img-top {
-      margin-right: 15px;
-      width: 45px;
+    .centerViews {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        #views {
+            color: grey;
+        }
     }
 
-    #albumTitle {
-      color: white;
+    .rightTime {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        #timeMusic {
+            color: gray;
+        }
     }
-
-    .card-img-top {
-      width: 45px;
-    }
-
-    #albumTitle {
-      color: white;
-    }
-  }
-
-  .centerViews {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    #views {
-      color: grey;
-    }
-  }
-
-  .rightTime {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    #timeMusic {
-      color: gray;
-    }
-  }
 }
 
 .brani-like {
-  display: none;
+    display: none;
 
-  @include lg {
-    display: inline;
-  }
+    @include lg {
+        display: inline;
+    }
 }
 
 // CONTAINER ARTIST PREFERITE ARTIST
 #container-artist {
-  background-size: cover;
+    background-size: cover;
 }
 
 .cont-stats {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 
-  .img-preferite {
-    width: 60px;
-    height: 60px;
-    background-size: cover;
-    border-radius: 50%;
-  }
+    .img-preferite {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        border-radius: 50%;
+    }
 
-  h6 {
-    color: white;
-    font-size: 0.9rem;
-    margin-left: 15px;
-  }
+    h6 {
+        color: white;
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
 
-  #albumTitle {
-    color: gray;
-    margin-left: 15px;
-  }
+    #albumTitle {
+        color: gray;
+        margin-left: 15px;
+    }
 }
 
 // section album
 .album-cover-box {
-  width: 100%;
-  height: auto;
-  background-color: rgb(230, 216, 198);
+    width: 100%;
+    height: auto;
+    background-color: rgb(230, 216, 198);
 }
 
 #album-cover {
-  display: flex;
-  flex-direction: row;
-  #cover-img {
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-  }
-  #album-name-album {
-    font-size: 200%;
-  }
+    display: flex;
+    flex-direction: row;
+    #cover-img {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+    #album-name-album {
+        font-size: 200%;
+    }
 }
 
 #album-titles {
-  background: rgb(250, 235, 215);
-  background: linear-gradient(
-    0deg,
-    rgba(250, 235, 215, 0) 4%,
-    rgba(250, 235, 215, 0.5) 100%
-  );
+    background: rgb(250, 235, 215);
+    background: linear-gradient(0deg, rgba(250, 235, 215, 0) 4%, rgba(250, 235, 215, 0.5) 100%);
 }
 
 .center-album-icon {
-  margin: 5px;
-  font-size: 30px;
+    margin: 5px;
+    font-size: 30px;
 }
 
 .track-div-box:hover {
-  background-color: rgba(255, 255, 255, 0.093);
-  transition: 0.15s ease-in-out;
-  * {
-    color: white;
-  }
+    background-color: rgba(255, 255, 255, 0.093);
+    transition: 0.15s ease-in-out;
+    * {
+        color: white;
+    }
 }
 
 .song-to-play,
 .artist-name,
 #author {
-  @include textDecoration;
+    @include textDecoration;
 
-  a {
-    color: $textColor;
-  }
+    a {
+        color: $textColor;
+    }
 }
 
 // search section
 
 #sectionAlbum {
-  @include albums;
+    @include albums;
 }

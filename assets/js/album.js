@@ -32,16 +32,16 @@ window.onload = async () => {
                         <p id="title-song"></p>
                         <p id="author"><a href=./artist.html?id=${albumArray.artist.id}>${albumArray.artist.name}</a></p>
                     </div>
-                    <i class="bi bi-heart"></i>`;
+                    <i id="heart-bg-player"class="bi bi-heart" onclick="changeClass()"></i>`;
 
     for (let t of albumArray.tracks.data) {
         let trackDiv = document.querySelector("#track-list-album");
 
         trackDiv.innerHTML += `
-        <div class="track-div-box text-light row mx-2 mt-4 track-div-box">
+        <div class="track-div-box text-light row mx-2 my-2">
                             <div class="col row justify-content-start ">
                                 <div class="col-1">
-                                    <h6>${albumArray.tracks.data.indexOf(t) + 1}</h6>
+                                    <h6 class="text-white-50">${albumArray.tracks.data.indexOf(t) + 1}</h6>
                                 </div>
                     
                                 <div class="col links-of-list">
@@ -49,10 +49,13 @@ window.onload = async () => {
                                     <div class="col song-to-play text-white-50"><a href=./artist.html?id=${t.artist.id}>${t.artist.name}</a></div>
                                 </div>
                             </div>
+
                             <div class="col-2 text-center text-white-50 d-none d-sm-block">${t.rank}</div>
+
                             <div class="col-2 text-center text-white-50 d-none d-sm-block">${secToMin(t.duration)} min </div>
+                            
                             <i class="col-2 bi bi-three-dots-vertical text-white-50 d-block d-sm-none"></i>
-                        </div>`;
+        </div>`;
     }
 };
 
@@ -65,4 +68,6 @@ let changeClass = function () {
     document.getElementById("heart").classList.toggle("bi-heart-fill");
     document.getElementById("heart-btm").classList.toggle("bi-heart");
     document.getElementById("heart-btm").classList.toggle("bi-heart-fill");
+    document.getElementById("heart-bg-player").classList.toggle("bi-heart");
+    document.getElementById("heart-bg-player").classList.toggle("bi-heart-fill");
 };
