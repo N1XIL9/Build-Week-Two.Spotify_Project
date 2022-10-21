@@ -29,7 +29,7 @@ async function chargeApi() {
     // console.log(container);
     container.innerHTML += ` <div class="leftTitle col-6">
                               <div id="numberTrack">${count}</div>
-                              <div><a href=./album.html?id=${albumTot[i].album.id}> <img src="${albumTot[i].album.cover_xl}" class="card-img-top"/></a></div>
+                              <div><a href=./album.html?id=${albumTot[i].album.id}> <img src="${albumTot[i].album.cover_xl}" id="card-img-top"/></a></div>
                               <div><a href=./album.html?id=${albumTot[i].album.id}> <h6 id="albumTitle">${albumTot[i].album.title}</h6></a></div>
                             </div>
 

@@ -10923,7 +10923,7 @@ hr {
   font-size: 1.5em;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #main-section {
     background: black;
   }
@@ -11043,7 +11043,7 @@ hr {
 #playlist .playlist-box img {
   width: 11vh;
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #playlist .playlist-box img {
     width: 7vh;
   }
@@ -11062,7 +11062,7 @@ hr {
     width: 30%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #playlist .playlist-box {
     background-color: transparent;
   }
@@ -11108,7 +11108,7 @@ hr {
 #card-container .card-title h5, #card-container .card-title .h5 {
   margin-top: 4vh;
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #card-container .card-title h5, #card-container .card-title .h5 {
     margin: 4vh;
   }
@@ -11374,7 +11374,7 @@ svg {
 
 #container-artist-btn {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 20px;
 }
 #container-artist-btn .play-byn-art {
@@ -11384,6 +11384,7 @@ svg {
   height: 6vh;
   background-color: #1ed760;
   border-radius: 2em;
+  border: none;
 }
 #container-artist-btn .follow-btn {
   margin-left: 25px;
@@ -11414,10 +11415,38 @@ svg {
   margin-bottom: 20px;
 }
 
-#contLCR {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
+@media (max-width: 575px) {
+  #contLCR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 576px) {
+  #contLCR {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  #contLCR {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  #contLCR {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    flex-direction: row;
+  }
 }
 #contLCR .leftTitle {
   display: flex;
@@ -11425,16 +11454,46 @@ svg {
   margin-bottom: 15px;
   margin-top: 15px;
 }
+@media (max-width: 575px) {
+  #contLCR .leftTitle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) {
+  #contLCR .leftTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    flex-direction: row;
+  }
+}
 #contLCR .leftTitle #numberTrack {
   margin-right: 10px;
   color: grey;
 }
-#contLCR .leftTitle .card-img-top {
-  margin-right: 15px;
-  width: 45px;
+@media (max-width: 575px) {
+  #contLCR .leftTitle #numberTrack {
+    display: none;
+  }
+}
+#contLCR .leftTitle #card-img-top {
+  width: 235px;
+}
+@media (min-width: 576px) {
+  #contLCR .leftTitle #card-img-top {
+    margin-right: 15px;
+    width: 45px;
+  }
 }
 #contLCR .leftTitle #albumTitle {
   color: white;
+}
+@media (max-width: 575px) {
+  #contLCR .leftTitle #albumTitle {
+    margin-top: 20px;
+  }
 }
 #contLCR .leftTitle .card-img-top {
   width: 45px;
@@ -11447,6 +11506,28 @@ svg {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 575px) {
+  #contLCR .centerViews {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #contLCR .centerViews {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #contLCR .centerViews {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 #contLCR .centerViews #views {
   color: grey;
 }
@@ -11454,6 +11535,28 @@ svg {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  display: none;
+}
+@media (min-width: 576px) {
+  #contLCR .rightTime {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #contLCR .rightTime {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  #contLCR .rightTime {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 #contLCR .rightTime #timeMusic {
   color: gray;
@@ -11568,7 +11671,7 @@ svg {
 #sectionAlbum .card-title h5, #sectionAlbum .card-title .h5 {
   margin-top: 4vh;
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #sectionAlbum .card-title h5, #sectionAlbum .card-title .h5 {
     margin: 4vh;
   }

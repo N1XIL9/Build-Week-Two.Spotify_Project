@@ -4,20 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/228474511d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <script src="https://kit.fontawesome.com/228474511d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Spotify</title>
   </head>
@@ -27,10 +16,7 @@
       <div id="main-container" class="row">
         <div id="leftSide" class="col-2 border border-dark">
           <!-- ICONE - TABS - COMMENTI  -->
-          <div
-            id="simple-list-example"
-            class="iconTabsComm d-flex flex-column simple-list-example-scrollspy"
-          >
+          <div id="simple-list-example" class="iconTabsComm d-flex flex-column simple-list-example-scrollspy">
             <i class="bi bi-three-dots"></i>
             <a id="text-dec" href="./index.html">
               <i class="bi bi-house-door-fill"><h6>Home</h6></i>
@@ -44,26 +30,13 @@
 
           <div class="iconTabsComm d-flex flex-column">
             <i class="bi bi-plus-square-fill"><h6>Crea playlist</h6></i>
-            <i class="bi bi-chat-right-heart-fill"
-              ><h6>Brani che ti piacciono</h6></i
-            >
+            <i class="bi bi-chat-right-heart-fill"><h6>Brani che ti piacciono</h6></i>
             <i class="bi bi-bookmark-plus-fill"><h6>I tuoi episodi</h6></i>
           </div>
           <hr />
 
           <!-- COMMENTI  -->
-          <div
-            id="comment-scroll"
-            data-spy="scroll"
-            data-target="#scrollspy"
-            data-offset="0"
-            style="
-              overflow-y: scroll;
-              position: relative;
-              background-color: black;
-              height: 45vh;
-            "
-          >
+          <div id="comment-scroll" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; position: relative; background-color: black; height: 45vh">
             <p>early stage emily syndrome (sett-ott 2022)</p>
             <p>Lidia risparmiaci🙏</p>
             <p>Eric uno di noi 🙌</p>
@@ -100,13 +73,7 @@
         <!-- SECTION CENTER  -->
 
         <div id="main-section" class="col">
-          <div
-            class="container"
-            data-spy="scroll"
-            data-target="#scrollspy"
-            data-offset="0"
-            style="overflow-y: scroll; height: 80vh; position: relative"
-          >
+          <div class="container" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 80vh; position: relative">
             <!-- INIZIO BARRA MAIN -->
             <div id="main-bar" class="row d-flex justify-content-between">
               <!-- ICONE FRECCE -->
@@ -119,18 +86,10 @@
               <!-- BOTTONE DROPDOWN -->
               <div class="col-2">
                 <div class="dropdown">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img
-                      src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD"
-                      alt=""
-                    />
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD" alt="" />
 
-                    Giuseppe
+                    PEPNIKAR
                   </button>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Account</a></li>
@@ -147,11 +106,7 @@
             <section id="container-artist">
               <!-- inserire immagine bg in js-->
               <h6>
-                <img
-                  class="badgeSpot"
-                  src="./assets/img/Legitly-Verified-Blue-Badge-top-page.png"
-                  alt="badge"
-                />
+                <img class="badgeSpot" src="./assets/img/Legitly-Verified-Blue-Badge-top-page.png" alt="badge" />
                 Artista verificato
               </h6>
               <h1 id="titleArt"></h1>
@@ -185,10 +140,7 @@
                 <div class="col-4 brani-like">
                   <div class="cont-stats">
                     <div>
-                      <img
-                        src="https://i.scdn.co/image/ab6761610000e5eb371632043a8c12bb7eeeaf9d"
-                        class="img-preferite"
-                      />
+                      <img src="https://i.scdn.co/image/ab6761610000e5eb371632043a8c12bb7eeeaf9d" class="img-preferite" />
                     </div>
                     <div>
                       <h6>Hai messo Mi piace a 11 Brani</h6>
@@ -298,11 +250,7 @@
       <!-- END SECTION BOTTOM PLAYER -->
       <section id="navbar-bottom">
         <div id="navbar-left">
-          <img
-            id="img-btn-player"
-            src="https://picsum.photos/60/60"
-            alt="music"
-          />
+          <img id="img-btn-player" src="https://picsum.photos/60/60" alt="music" />
           <div class="play-back">
             <p id="title-song">La Passeggiata</p>
             <p id="author">Nicola Lerra</p>
@@ -347,19 +295,18 @@
           </div>
         </div>
       </div>
-      <div
-        id="list-menu-bottom"
-        class="iconTabsComm d-flex justify-content-around"
-      >
-        <a id="text-dec" href="#">
+      <div id="list-menu-bottom" class="iconTabsComm d-flex justify-content-around">
+        <a id="text-dec" href="./index.html">
           <i class="bi bi-house-door-fill"
             ><br />
             <h6>Home</h6></i
           >
         </a>
-        <i class="bi bi-search"
-          ><br />
-          <h6>Cerca</h6></i
+        <a href="./search.html"
+          ><i class="bi bi-search"
+            ><br />
+            <h6>Cerca</h6></i
+          ></a
         >
         <i class="bi bi-files"
           ><br />
@@ -368,11 +315,7 @@
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="./assets/js/artist.js"></script>
   </body>
 </html>

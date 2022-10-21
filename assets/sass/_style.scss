@@ -445,8 +445,9 @@ svg {
 // CONTAINER ARTIST BtN
 #container-artist-btn {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 20px;
+
   .play-byn-art {
     text-align: center;
     font-size: 1.5rem;
@@ -454,6 +455,7 @@ svg {
     height: 6vh;
     background-color: #1ed760;
     border-radius: 2em;
+    border: none;
   }
 
   .follow-btn {
@@ -489,9 +491,34 @@ svg {
 // CONTAINER ARTIST COVER AND StATS
 
 #contLCR {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  @include md {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    flex-direction: row;
+  }
+
+  @include lg {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    flex-direction: row;
+  }
 
   .leftTitle {
     display: flex;
@@ -499,18 +526,43 @@ svg {
     margin-bottom: 15px;
     margin-top: 15px;
 
+    @include xs {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include sm {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      flex-direction: row;
+    }
+
     #numberTrack {
       margin-right: 10px;
       color: grey;
+
+      @include xs {
+        display: none;
+      }
     }
 
-    .card-img-top {
-      margin-right: 15px;
-      width: 45px;
+    #card-img-top {
+      width: 235px;
+
+      @include sm {
+        margin-right: 15px;
+        width: 45px;
+      }
     }
 
     #albumTitle {
       color: white;
+
+      @include xs {
+        margin-top: 20px;
+      }
     }
 
     .card-img-top {
@@ -527,6 +579,25 @@ svg {
     justify-content: flex-end;
     align-items: center;
 
+    @include xs {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      display: none;
+    }
+
+    @include sm {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    @include md {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
     #views {
       color: grey;
     }
@@ -536,6 +607,25 @@ svg {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    display: none;
+
+    @include sm {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    @include md {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    @include lg {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
 
     #timeMusic {
       color: gray;
