@@ -23,7 +23,9 @@
                     <!-- ICONE - TABS - COMMENTI  -->
                     <div id="simple-list-example" class="iconTabsComm d-flex flex-column simple-list-example-scrollspy">
                         <i class="bi bi-three-dots"></i>
-                        <a id="text-dec" href="./index.html"> <i class="bi bi-house-door-fill"><h6>Home</h6></i> </a> 
+                        <a id="text-dec" href="./index.html">
+                            <i class="bi bi-house-door-fill"><h6>Home</h6></i>
+                        </a>
                         <i class="bi bi-search"><h6>Cerca</h6></i>
                         <i class="bi bi-files"><h6>La tua libreria</h6></i>
                     </div>
@@ -73,151 +75,140 @@
 
                 <!-- SECTION CENTER  -->
 
+                <div id="main-section" class="col" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 100vh; position: relative">
+                    <div class="album-cover-box pt-2 px-2">
+                        <div>
+                            <!-- INIZIO BARRA MAIN -->
+                            <div id="main-bar" class="row justify-content-between me-5">
+                                <!-- ICONE FRECCE -->
+                                <div class="col-2 d-flex flex-row">
+                                    <i class="bi bi-arrow-left-circle-fill me-2 d-none d-md-block"></i>
+                                    <i class="bi bi-arrow-right-circle-fill d-none d-md-block"></i>
+                                </div>
+                                <!-- FINE ICONE FRECCE -->
 
-
-             <div id="main-section" class="col" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 100vh; position:relative">
-                
-                <div class="album-cover-box pt-2 px-2">
-                    <div>
-                        <!-- INIZIO BARRA MAIN -->
-                        <div id="main-bar" class="row justify-content-between me-5 ">
-                            <!-- ICONE FRECCE -->
-                            <div class="col-2 d-flex flex-row">
-                                <i class="bi bi-arrow-left-circle-fill me-2 d-none d-md-block"></i>
-                                <i class="bi bi-arrow-right-circle-fill d-none d-md-block"></i>
+                                <!-- BOTTONE DROPDOWN -->
+                                <div class="col-2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img
+                                                src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD"
+                                                alt=""
+                                            />
+                                            Giuseppe
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Account</a></li>
+                                            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                            <li><a class="dropdown-item" href="#">Esci</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- FINE BOTTONE DROPDOWN -->
                             </div>
-                            <!-- FINE ICONE FRECCE -->
+                            <!-- FINE BARRA MAIN -->
 
-                            <!-- BOTTONE DROPDOWN -->
-                            <div class="col-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img
-                                            src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD"
-                                            alt=""
-                                        />
-                                        Giuseppe
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Account</a></li>
-                                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                                        <li><a class="dropdown-item" href="#">Esci</a></li>
-                                    </ul>
+                            <!-- INIZIO cover -->
+
+                            <div class="row">
+                                <div id="album-cover" class="d-flex flex-column flex-lg-row align-items-center">
+                                    <!--  -->
                                 </div>
                             </div>
-                            <!-- FINE BOTTONE DROPDOWN -->
                         </div>
-                        <!-- FINE BARRA MAIN -->
+                    </div>
 
-                        <!-- INIZIO cover -->
+                    <!-- player centrale -->
+                    <div id="album-titles">
+                        <div id="center-player" class="px-3">
+                            <i class="center-album-icon fa-solid fa-circle-play text-success float-end float-md-start"></i>
+                            <i class="center-album-icon bi bi-heart text-light"></i>
 
-                        <div class="row">
-                            <div id="album-cover" class="d-flex flex-column flex--md-row">
-                                <!--  -->
+                            <i class="center-album-icon bi bi-arrow-down-circle text-light"></i>
+
+                            <i class="center-album-icon bi bi-three-dots text-light"></i>
+                            <i class="center-album-icon fa-solid fa-shuffle float-end text-light d-block d-md-none"></i>
+                        </div>
+                        <div id="titles-box">
+                            <div class="title-head text-light row mx-2 mt-4">
+                                <div class="col-1 text-white-50">#</div>
+                                <div class="col text-white-50">TITOLO</div>
+                                <div class="col-2 text-center text-white-50">RANK</div>
+
+                                <div class="col-2 text-center">
+                                    <i class="bi bi-stopwatch text-white-50"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-2 m-0 me-3" id="track-list-album"></div>
+                    </div>
+                    <!-- <div class="bg-white">geeeee</div> -->
+                </div>
+
+                <!-- chiusira div centrale -->
+
+                <!-- SECTION RIGHT -->
+
+                <div id="rightside" class="col-2 border border-dark pe-2">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <h6 class="text-white mt-2">Attività amici</h6>
+                        </div>
+
+                        <div class="col d-flex justify-content-end">
+                            <i class="bi bi-person-plus"></i>
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row friends mt-4">
+                            <div class="col-3">
+                                <div class="friend friend-1"></div>
+                            </div>
+                            <div class="col">
+                                <h6>Michael Jackson</h6>
+                                <p class="pt-0">Michael sta ascoltando Zombie</p>
+                            </div>
+                            <div class="col-2 me-1">
+                                <p id="ore">4 ore</p>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- player centrale -->
-                <div id="album-titles">
-                    <div id="center-player" class="px-3">
-                        <i class="center-album-icon fa-solid fa-circle-play text-success float-end float-md-start "></i>  
-                        <i class="center-album-icon bi bi-heart text-light"></i>
-
-                        <i class="center-album-icon bi bi-arrow-down-circle text-light"></i>
-
-                        <i class="center-album-icon bi bi-three-dots text-light"></i>
-                        <i class="center-album-icon fa-solid fa-shuffle float-end text-light  d-block d-md-none "></i>                    
-                    </div>
-                    <div id="titles-box">
-                        <div class="title-head text-light row mx-2 mt-4">
-                            <div class="col text-white-50">#TITOLO</div>
-                            <div class="col-2 text-center text-white-50">RANK</div>
-
-                            <div class="col-2 text-center">
-                                <i class="bi bi-stopwatch text-white-50"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" id="track-list-album">
-                        
-                       
-                    </div>
-                </div>
-                </div>
-           
-
-            <!-- chiusira div centrale -->
-
-            <!-- SECTION RIGHT -->
-            
-            <div id="rightside" class="col-2 border border-dark pe-2">
-                <div class="row justify-content-between">
-                    <div class="col">
-                        <h6 class="text-white mt-2">Attività amici</h6>
-                    </div>
-
-                    <div class="col d-flex justify-content-end">
-                        <i class="bi bi-person-plus"></i>
-                        <i class="bi bi-x-lg"></i>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="row friends mt-4">
+                    <div class="row friends mt-2">
                         <div class="col-3">
-                            <div class="friend friend-1"></div>
+                            <div class="friend friend-2"></div>
                         </div>
                         <div class="col">
-                            <h6>Michael Jackson</h6>
-                            <p class="pt-0">Michael sta ascoltando Zombie</p>
+                            <h6>Amy winehouse</h6>
+                            <p class="pt-0">amy ha condiviso un post di Maneskin</p>
+                        </div>
+                        <div class="col-2 me-1">
+                            <p id="ore">4 ore</p>
+                        </div>
+                    </div>
+
+                    <div class="row friends mt-2 aras">
+                        <div class="col-3">
+                            <div class="friend friend-3"></div>
+                        </div>
+                        <div class="col">
+                            <h6>The Cranberries</h6>
+                            <p class="pt-0">ha publicato un novo canzone!</p>
                         </div>
                         <div class="col-2 me-1">
                             <p id="ore">4 ore</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="row friends mt-2">
-                    <div class="col-3">
-                        <div class="friend friend-2"></div>
-                    </div>
-                    <div class="col">
-                        <h6>Amy winehouse</h6>
-                        <p class="pt-0">amy ha condiviso un post di Maneskin</p>
-                    </div>
-                    <div class="col-2 me-1">
-                        <p id="ore">4 ore</p>
-                    </div>
-                </div>
-
-                <div class="row friends mt-2 aras">
-                    <div class="col-3">
-                        <div class="friend friend-3"></div>
-                    </div>
-                    <div class="col">
-                        <h6>The Cranberries</h6>
-                        <p class="pt-0">ha publicato un novo canzone!</p>
-                    </div>
-                    <div class="col-2 me-1">
-                        <p id="ore">4 ore</p>
-                    </div>
-                    
-                </div>
             </div>
-            
-        </div>
-        </div>
 
             <!-- START SECTION BOTTOM PLAYER  -->
-            
 
-        <section id="navbar-bottom">
-                <div id="navbar-left" >
-                    
-                </div>
-                <div  id="navbar-center">
+            <section id="navbar-bottom">
+                <div id="navbar-left"></div>
+                <div id="navbar-center">
                     <div class="track-buttons">
                         <i class="fa-solid fa-shuffle"></i>
                         <i class="fa-solid fa-backward-step"></i>
@@ -246,7 +237,6 @@
             <!-- END SECTION BOTTOM PLAYER -->
 
             <!-- MINI PLAYER & MINIBAR SECTION -->
-
         </div>
 
         <script
