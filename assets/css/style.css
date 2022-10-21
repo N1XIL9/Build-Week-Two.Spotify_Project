@@ -10802,6 +10802,12 @@ a {
   background: linear-gradient(180deg, rgb(46, 45, 44) 0%, rgb(16, 15, 15) 46%);
 }
 
+@media (max-width: 997px) {
+  #main-section {
+    width: 100%;
+  }
+}
+
 #main-container {
   height: 100vh;
   background: rgb(65, 64, 63);
@@ -11180,8 +11186,6 @@ hr {
 }
 
 #list-menu-bottom {
-  position: sticky;
-  bottom: 0;
   background-color: rgba(0, 0, 0, 0);
   height: 6vh;
   margin-top: 2vh;
@@ -11202,7 +11206,7 @@ hr {
 }
 @media (min-width: 992px) {
   #list-menu-bottom {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -11396,6 +11400,14 @@ svg {
 #container-artist-btn .bi {
   margin-left: 15px;
   color: grey;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bi {
+  margin-left: 15px;
+  color: grey;
 }
 
 .container-artist-title {
@@ -11427,6 +11439,9 @@ svg {
 }
 #contLCR .leftTitle .card-img-top {
   width: 45px;
+}
+#contLCR .leftTitle #albumTitle {
+  color: white;
 }
 #contLCR .centerViews {
   display: flex;
@@ -11510,7 +11525,10 @@ svg {
 
 .track-div-box:hover {
   background-color: rgba(255, 255, 255, 0.093);
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+.track-div-box:hover * {
+  color: white;
 }
 
 .song-to-play a,
