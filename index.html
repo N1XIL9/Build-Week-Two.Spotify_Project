@@ -4,20 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/228474511d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <script src="https://kit.fontawesome.com/228474511d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Spotify</title>
   </head>
@@ -27,40 +16,26 @@
       <div id="main-container" class="row">
         <div id="leftSide" class="col-2 border border-dark">
           <!-- ICONE - TABS - COMMENTI  -->
-          <div
-            id="simple-list-example"
-            class="iconTabsComm d-flex flex-column simple-list-example-scrollspy"
-          >
+          <div id="simple-list-example" class="iconTabsComm d-flex flex-column simple-list-example-scrollspy">
             <i class="bi bi-three-dots"></i>
             <a id="text-dec" href="#">
               <i class="bi bi-house-door-fill"><h6>Home</h6></i>
             </a>
-            <i class="bi bi-search"><h6>Cerca</h6></i>
+            <a href="./search.html"
+              ><i class="bi bi-search"><h6>Cerca</h6></i></a
+            >
             <i class="bi bi-files"><h6>La tua libreria</h6></i>
           </div>
 
           <div class="iconTabsComm d-flex flex-column">
             <i class="bi bi-plus-square-fill"><h6>Crea playlist</h6></i>
-            <i class="bi bi-chat-right-heart-fill"
-              ><h6>Brani che ti piacciono</h6></i
-            >
+            <i class="bi bi-chat-right-heart-fill"><h6>Brani che ti piacciono</h6></i>
             <i class="bi bi-bookmark-plus-fill"><h6>I tuoi episodi</h6></i>
           </div>
           <hr />
 
           <!-- COMMENTI  -->
-          <div
-            id="comment-scroll"
-            data-spy="scroll"
-            data-target="#scrollspy"
-            data-offset="0"
-            style="
-              overflow-y: scroll;
-              height: 45vh;
-              position: relative;
-              background-color: black;
-            "
-          >
+          <div id="comment-scroll" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 45vh; position: relative; background-color: black">
             <p>early stage emily syndrome (sett-ott 2022)</p>
             <p>Lidia risparmiaci🙏</p>
             <p>Eric uno di noi 🙌</p>
@@ -97,18 +72,9 @@
         <!-- SECTION CENTER  -->
 
         <div id="main-section" class="col">
-          <div
-            class="container"
-            data-spy="scroll"
-            data-target="#scrollspy"
-            data-offset="0"
-            style="overflow-y: scroll; height: 80vh; position: relative"
-          >
+          <div class="container" data-spy="scroll" data-target="#scrollspy" data-offset="0" style="overflow-y: scroll; height: 80vh; position: relative">
             <!-- INIZIO BARRA MAIN -->
-            <div
-              id="main-bar"
-              class="row d-flex justify-content-between align-items-center"
-            >
+            <div id="main-bar" class="row d-flex justify-content-between align-items-center">
               <!-- ICONE FRECCE -->
               <div class="col-2 d-flex justify-content-evenly">
                 <i class="bi bi-arrow-left-circle-fill"></i>
@@ -119,16 +85,8 @@
               <!-- BOTTONE DROPDOWN -->
               <div class="col-2">
                 <div class="dropdown">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img
-                      src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD"
-                      alt=""
-                    />
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://scontent.fmxp9-1.fna.fbcdn.net/v/t1.18169-9/19961551_1927296774210867_8116251475944142394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fvEiecMsqqQAX9Vakk7&_nc_ht=scontent.fmxp9-1.fna&oh=00_AT-WRHzsUOr1psE9tGqp7YFWSs0GLZ0aioMGpcnIp-jZQg&oe=6373D7DD" alt="" />
 
                     Giuseppe
                   </button>
@@ -146,10 +104,7 @@
             <!-- INIZIO JUMBOTRON -->
             <div id="jumbotron" class="row">
               <div class="col-3 py-4 px-3">
-                <img
-                  src="https://cloud.rtl.it/Song/600x600/fedez-ft-salmo-viola-kdtqx.jpg"
-                  alt=""
-                />
+                <img src="https://cloud.rtl.it/Song/600x600/fedez-ft-salmo-viola-kdtqx.jpg" alt="" />
               </div>
               <div class="col-9">
                 <div class="row m-1 d-flex justify-content-between">
@@ -183,45 +138,27 @@
             <section id="playlist">
               <div class="row d-flex justify-content-around flex-wrap">
                 <div class="playlist-box col-lg-2 d-flex align-items-center">
-                  <img
-                    src="https://www.money.it/local/cache-gd2/80/c9114fd852920b136375a5725ce3c2.jpg?1666353792"
-                    alt=""
-                  />
+                  <img src="https://i0.wp.com/www.espressione24.it/wp-content/uploads/2020/04/iorgia-Meloni.jpg?resize=256%2C256&ssl=1" alt="" />
                   <p>Sono una playlist, sono donna, sono italiana</p>
                 </div>
                 <div class="playlist-box col-lg-2 d-flex align-items-center">
-                  <img
-                    src="https://www.adnkronos.com/resources/027a-166208efa109-819bab0b9f1e-1000/salvini_camiciabianca_fg.jpg"
-                    alt=""
-                  />
+                  <img src="https://pbs.twimg.com/profile_images/612236040535973889/kUugKUUw_400x400.jpg" alt="" />
                   <p>Ah no?</p>
                 </div>
                 <div class="playlist-box col-lg-2 d-flex align-items-center">
-                  <img
-                    src="https://www.adnkronos.com/resources/027a-16582124afe0-0da3752c7721-1000/berlusconi_appunti_afp.jpg"
-                    alt=""
-                  />
+                  <img src="https://www.news24web.it/wp-content/uploads/2014/04/Berlusconi.jpeg" alt="" />
                   <p>Mi consentah!</p>
                 </div>
                 <div class="playlist-box col-lg-2 d-flex align-items-center">
-                  <img
-                    src="https://media-assets.lacucinaitaliana.it/photos/620b605eb3c1fe2b1c4f1c58/1:1/w_589,h_589,c_limit/Antonino-Cannavacciuolo-by-Oliviero-Toscani1.jpg"
-                    alt=""
-                  />
+                  <img src="https://pbs.twimg.com/profile_images/724564900358574081/HreFzeHL_400x400.jpg" alt="" />
                   <p>Adios!</p>
                 </div>
                 <div class="playlist-box col-lg-2 d-flex align-items-center">
-                  <img
-                    src="https://cdn.gelestatic.it/limesonline/www/2022/05/Putin-1024x731.jpg"
-                    alt=""
-                  />
+                  <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/v1506011067/nebrqlxufjmuayojxcll.jpg" alt="" />
                   <p>Va che ti invado</p>
                 </div>
                 <div class="playlist-box col-lg-2 d-flex align-items-center">
-                  <img
-                    src="https://www.rainews.it/dl/img/2022/04/01/1648800252546_AP.jpg"
-                    alt=""
-                  />
+                  <img src="https://s.err.ee/photo/crop/2020/01/22/734173hb85et4.jpg" alt="" />
                   <p>Popcorn e patatine!</p>
                 </div>
               </div>
@@ -238,10 +175,7 @@
                 </div>
               </div>
               <div class="row">
-                <div
-                  id="card-container"
-                  class="col d-flex flex-wrap justify-content-around"
-                ></div>
+                <div id="card-container" class="col d-flex flex-wrap justify-content-around"></div>
               </div>
             </section>
           </div>
@@ -354,10 +288,7 @@
             </div>
           </div>
         </div>
-        <div
-          id="list-menu-bottom"
-          class="iconTabsComm d-flex justify-content-around"
-        >
+        <div id="list-menu-bottom" class="iconTabsComm d-flex justify-content-around">
           <a id="text-dec" href="#">
             <i class="bi bi-house-door-fill"
               ><br />
@@ -376,11 +307,7 @@
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

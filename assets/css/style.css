@@ -10962,7 +10962,7 @@ hr {
   display: none;
 }
 .dropdown button {
-  width: 17vh;
+  width: 23vh;
   border: none;
   border-radius: 3em;
   background-color: black;
@@ -11114,6 +11114,9 @@ hr {
   }
 }
 #card-container .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 0;
   text-align: center;
 }
@@ -11571,6 +11574,9 @@ svg {
   }
 }
 #sectionAlbum .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 0;
   text-align: center;
 }
