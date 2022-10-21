@@ -11449,8 +11449,8 @@ svg {
   flex-direction: row;
 }
 #album-cover #cover-img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   background-size: cover;
 }
 #album-cover #album-name-album {
