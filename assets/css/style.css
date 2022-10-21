@@ -10798,6 +10798,12 @@ h5,
   background: linear-gradient(180deg, rgb(46, 45, 44) 0%, rgb(16, 15, 15) 46%);
 }
 
+@media (max-width: 997px) {
+  #main-section {
+    width: 100%;
+  }
+}
+
 #main-container {
   height: 100vh;
   background: rgb(65, 64, 63);
@@ -11176,8 +11182,6 @@ hr {
 }
 
 #list-menu-bottom {
-  position: sticky;
-  bottom: 0;
   background-color: rgba(0, 0, 0, 0);
   height: 6vh;
   margin-top: 2vh;
@@ -11198,7 +11202,7 @@ hr {
 }
 @media (min-width: 992px) {
   #list-menu-bottom {
-    display: none !important;
+    display: none;
   }
 }
 
