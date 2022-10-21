@@ -284,9 +284,6 @@ hr {
   i {
     margin-top: 1vh;
   }
-  a {
-    margin-top: 1vh;
-  }
 
   #text-dec,
   h6,
@@ -296,7 +293,7 @@ hr {
     margin: 0;
   }
   @include lg {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -635,4 +632,10 @@ svg {
   a {
     color: $textColor;
   }
+}
+
+// search section
+
+#sectionAlbum {
+  @include albums;
 }
