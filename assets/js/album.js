@@ -49,8 +49,9 @@ window.onload = async () => {
                                     <div class="col song-to-play text-white-50"><a href=./artist.html?id=${t.artist.id}>${t.artist.name}</a></div>
                                 </div>
                             </div>
-                            <div class="col-2 text-center text-white-50">${t.rank}</div>
-                            <div class="col-2 text-center text-white-50">${secToMin(t.duration)} min </div>
+                            <div class="col-2 text-center text-white-50 d-none d-sm-block">${t.rank}</div>
+                            <div class="col-2 text-center text-white-50 d-none d-sm-block">${secToMin(t.duration)} min </div>
+                            <i class="col-2 bi bi-three-dots-vertical text-white-50 d-block d-sm-none"></i>
                         </div>`;
     }
 };
