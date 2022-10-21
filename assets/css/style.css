@@ -10876,6 +10876,43 @@ hr {
   columns: #b2afac;
 }
 
+.searchbar-container {
+  margin-top: 4vh;
+}
+
+#searchbar {
+  width: 95%;
+  height: 7vh;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: #1b1b1b;
+  margin: 2vh auto;
+  color: grey;
+}
+
+#searchbar::placeholder {
+  font-size: 1.5em;
+  padding-left: 3vh;
+}
+
+#search-cards-container {
+  margin-top: 4vh;
+}
+
+.search-card {
+  background-color: red;
+  width: 25vh;
+  height: 23vh;
+  margin-top: 4vh;
+  border-radius: 1em;
+}
+.search-card h5, .search-card .h5 {
+  color: white;
+  font-weight: 500;
+  margin-top: 3vh;
+  font-size: 1.5em;
+}
+
 @media (max-width: 576px) {
   #main-section {
     background: black;
