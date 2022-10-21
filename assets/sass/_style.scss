@@ -23,7 +23,7 @@ h5 {
 }
 
 #main-container {
-  height: 100%;
+  height: 100vh;
   @include bgColorGradient;
 }
 
@@ -233,6 +233,8 @@ hr {
 }
 
 #list-menu-bottom {
+  position: sticky;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0);
   height: 6vh;
   margin-top: 2vh;
@@ -251,7 +253,7 @@ hr {
     margin: 0;
   }
   @include lg {
-    display: none;
+    display: none !important;
   }
 }
 

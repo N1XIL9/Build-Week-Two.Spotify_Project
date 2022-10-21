@@ -10799,7 +10799,7 @@ h5,
 }
 
 #main-container {
-  height: 100%;
+  height: 100vh;
   background: rgb(65, 64, 63);
   background: linear-gradient(180deg, rgb(46, 45, 44) 0%, rgb(16, 15, 15) 46%);
 }
@@ -10915,7 +10915,7 @@ hr {
   display: none;
 }
 .dropdown button {
-  width: 20vh;
+  width: 17vh;
   border: none;
   border-radius: 3em;
   background-color: black;
@@ -11055,7 +11055,7 @@ hr {
   }
 }
 #card-container .card-title {
-  font-size: 1rem;
+  font-size: 0.7em;
   font-weight: 400;
   margin-top: 1vh;
 }
@@ -11139,6 +11139,8 @@ hr {
 }
 
 #list-menu-bottom {
+  position: sticky;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0);
   height: 6vh;
   margin-top: 2vh;
@@ -11159,7 +11161,7 @@ hr {
 }
 @media (min-width: 992px) {
   #list-menu-bottom {
-    display: none;
+    display: none !important;
   }
 }
 

@@ -25,8 +25,7 @@
 
 @mixin dropdownButton {
   button {
-    width: 20vh;
-
+    width: 17vh;
     border: none;
     border-radius: 3em;
     background-color: $sideColor;
@@ -149,7 +148,7 @@
     }
   }
   .card-title {
-    font-size: 1rem;
+    font-size: 0.7em;
     font-weight: 400;
     margin-top: 1vh;
     h5 {
