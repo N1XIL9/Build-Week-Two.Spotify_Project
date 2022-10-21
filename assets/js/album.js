@@ -38,7 +38,7 @@ window.onload = async () => {
         let trackDiv = document.querySelector("#track-list-album");
 
         trackDiv.innerHTML += `
-        <div class="title-head text-light row mx-2 mt-4 track-div-box">
+        <div class="track-div-box text-light row mx-2 mt-4 track-div-box">
                             <div class="col row justify-content-start ">
                                 <div class="col-1">
                                     <h6>${albumArray.tracks.data.indexOf(t) + 1}</h6>
@@ -59,3 +59,10 @@ window.onload = async () => {
 function myFunction(nome, preview) {
     document.getElementById("title-song").innerHTML = nome;
 }
+
+let changeClass = function () {
+    document.getElementById("heart").classList.toggle("bi-heart");
+    document.getElementById("heart").classList.toggle("bi-heart-fill");
+    document.getElementById("heart-btm").classList.toggle("bi-heart");
+    document.getElementById("heart-btm").classList.toggle("bi-heart-fill");
+};
