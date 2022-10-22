@@ -1,9 +1,12 @@
 let count = 0;
+let audio = new Audio();
+let titles = document.querySelectorAll("#title-song");
+let authors = document.querySelectorAll("#author");
+let navbarLeft = document.getElementById("navbar-left");
+let navbarRight = document.getElementById("navbar-right");
 
 async function chargeApi() {
-  let linkArtist = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`
-  );
+  let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=Nicola%20Lerra`);
   let responseText = await linkArtist.json();
   let musicArray = responseText.data;
 
