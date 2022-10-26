@@ -6,7 +6,6 @@ let id = queryString.get("id");
 async function chargeApi() {
   let linkArtist = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/${id}`);
   let responseText = await linkArtist.json();
-
   let linkArtistDet = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${responseText.name}`);
   let responseTextD = await linkArtistDet.json();
   let musicArray = responseTextD.data;
@@ -49,17 +48,17 @@ async function chargeApi() {
   let titleArti = document.querySelector("#titleArt");
   titleArti.innerText = `${responseText.name}`;
 
-  let bflat = new Audio();
-  bflat.src = "../assets/sound/A way of life.mp3";
-  function PlaySound() {
-    bflat.play();
-  }
-  PlaySound();
+  // let bflat = new Audio();
+  // bflat.src = "../assets/sound/A way of life.mp3";
+  // function PlaySound() {
+  //   bflat.play();
+  // }
+  // PlaySound();
 }
 chargeApi();
 
 // * START TRACKBAR
-
+let previewImg = document.querySelectorAll("#preview-img");
 let timer = 0;
 let timer2 = 100;
 let pause = document.getElementById("pause");
@@ -70,6 +69,7 @@ let seconds = 0;
 let minutes = 0;
 let trackSeconds = document.getElementById("track-seconds");
 let trackDefault = document.getElementsByClassName("track-default")[0];
+let buonasalvePlaylistFETCH = [];
 
 playAds.addEventListener("click", playFunction);
 play.addEventListener("click", playFunctionNavbar);
