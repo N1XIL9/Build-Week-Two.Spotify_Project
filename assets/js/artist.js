@@ -13,9 +13,9 @@ async function chargeApi() {
   console.log(musicArray);
 
   const albumOne = musicArray.slice(0, 5);
-  const albumTwo = musicArray.slice(7, 9);
-  const albumThree = musicArray[14];
-  const albumFour = musicArray.slice(17, 19);
+  const albumTwo = musicArray.slice(11, 14);
+  const albumThree = musicArray[21];
+  const albumFour = musicArray.slice(22, 23);
 
   let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
 
@@ -48,12 +48,12 @@ async function chargeApi() {
   let titleArti = document.querySelector("#titleArt");
   titleArti.innerText = `${responseText.name}`;
 
-  // let bflat = new Audio();
-  // bflat.src = "../assets/sound/A way of life.mp3";
-  // function PlaySound() {
-  //   bflat.play();
-  // }
-  // PlaySound();
+  let bflat = new Audio();
+  bflat.src = "../assets/sound/A way of life.mp3";
+  function PlaySound() {
+    bflat.play();
+  }
+  PlaySound();
 }
 chargeApi();
 

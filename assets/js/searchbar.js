@@ -6,9 +6,9 @@ async function chargeApi() {
   let musicArray = responseText.data;
 
   const albumOne = musicArray.slice(0, 5);
-  const albumTwo = musicArray.slice(7, 9);
-  const albumThree = musicArray[14];
-  const albumFour = musicArray.slice(17, 19);
+  const albumTwo = musicArray.slice(11, 14);
+  const albumThree = musicArray[21];
+  const albumFour = musicArray.slice(22, 23);
 
   let albumTot = albumOne.concat(albumTwo, albumThree, albumFour);
 
